@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.bootdo.qrcode.dao.QrcodeDao">
+
+	<select id="get" resultType="com.bootdo.qrcode.domain.QrcodeDO">
+		select `Id`,`qqurl`,`wechaturl`,`alipayurl`,`resulturl` from qrcode where Id = #{value}
+	</select>
+
+	<select id="list" resultType="com.bootdo.qrcode.domain.QrcodeDO">
+		select `Id`,`qqurl`,`wechaturl`,`alipayurl`,`resulturl` from qrcode
+        <where>  
+		  		  <if test="id != null and id != ''"> and Id = #{id} </if>
+		  		  <if test="qqurl != null and qqurl != ''"> and qqurl = #{qqurl} </if>
+		  		  <if test="wechaturl != null and wechaturl != ''"> and wechaturl = #{wechaturl} </if>
+		  		  <if test="alipayurl != null and alipayurl != ''"> and alipayurl = #{alipayurl} </if>
+		  		  <if test="resulturl != null and resulturl != ''"> and resulturl = #{resulturl} </if>
+		  		</where>
+        <choose>
+            <when test="sort != null and sort.trim() != ''">
+                order by ${sort} ${order}
+            </when>
+			<otherwise>
+                order by Id desc
+			</otherwise>
+        </choose>
+		<if test="offset != null and limit != null">
+			limit #{offset}, #{limit}
+		</if>
+	</select>
+	
+ 	<select id="count" resultType="int">
+		select count(*) from qrcode
+		 <where>  
+		  		  <if test="id != null and id != ''"> and Id = #{id} </if>
+		  		  <if test="qqurl != null and qqurl != ''"> and qqurl = #{qqurl} </if>
+		  		  <if test="wechaturl != null and wechaturl != ''"> and wechaturl = #{wechaturl} </if>
+		  		  <if test="alipayurl != null and alipayurl != ''"> and alipayurl = #{alipayurl} </if>
+		  		  <if test="resulturl != null and resulturl != ''"> and resulturl = #{resulturl} </if>
+		  		</where>
+	</select>
+	 
+	<insert id="save" parameterType="com.bootdo.qrcode.domain.QrcodeDO" useGeneratedKeys="true" keyProperty="id">
+		insert into qrcode
+		(
+			`qqurl`, 
+			`wechaturl`, 
+			`alipayurl`, 
+			`resulturl`
+		)
+		values
+		(
+			#{qqurl}, 
+			#{wechaturl}, 
+			#{alipayurl}, 
+			#{resulturl}
+		)
+	</insert>
+	 
+	<update id="update" parameterType="com.bootdo.qrcode.domain.QrcodeDO">
+		update qrcode 
+		<set>
+			<if test="qqurl != null">`qqurl` = #{qqurl}, </if>
+			<if test="wechaturl != null">`wechaturl` = #{wechaturl}, </if>
+			<if test="alipayurl != null">`alipayurl` = #{alipayurl}, </if>
+			<if test="resulturl != null">`resulturl` = #{resulturl}</if>
+		</set>
+		where Id = #{id}
+	</update>
+	
+	<delete id="remove">
+		delete from qrcode where Id = #{value}
+	</delete>
+	
+	<delete id="batchRemove">
+		delete from qrcode where Id in 
+		<foreach item="id" collection="array" open="(" separator="," close=")">
+			#{id}
+		</foreach>
+	</delete>
+
+</mapper>

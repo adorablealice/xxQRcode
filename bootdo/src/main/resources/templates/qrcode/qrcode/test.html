@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>微信支付</title>
+    <meta name="description" content="芝麻收款-微信支付" />
+    <meta name="keywords" content="芝麻收款"  />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta content="email=no" name="format-detection">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?v=20170320">
+    <script type="text/javascript" src="http://static.runoob.com/assets/jquery/2.0.3/jquery.min.js"></script>
+    <style type="text/css">
+        /*!
+         * WePayUI v0.1.1 (https://github.com/wepayui/wepayui)
+         * Copyright 2017 Tencent, Inc.
+         * Licensed under the MIT license
+         * Component : [weui-dialog]
+         */
+        html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+        body{line-height:1.6;font-family:-apple-system-font,Helvetica Neue,sans-serif}
+        *{margin:0;padding:0}
+        a img{border:0}
+        a{text-decoration:none;-webkit-tap-highlight-color:transparent}
+        @media screen and (min-width:1024px){.weui-dialog{width:35%}}
+
+        *{margin: 0;padding: 0;}
+        a{outline: none;}
+        body{background: #f2f2f2;}
+        .pay_head .banner{width: 100%;display: block;}
+        .achieve{min-height: 100vh;background: #1AAD19;position: relative;}
+        .pay-codeimg{width: 100%;position: absolute;top: 60%;left: 0;right: 0;bottom: 0;}
+        .otheroptions{width: 100%;position: absolute;top: 50%;left: 0;right: 0;text-align:center;display:none;color:white;}
+        .showImg{width: 100%;position: absolute;top: 30%;left: 0;right: 0;text-align:center;display:none;color:white;}
+        .showImg img{width: 90%;}
+        .otheroptions span{height: 40px;width: 150px;line-height: 40px;display: inline-block;border-radius: 8px;background: white;color:black;}
+        .showImg span{height: 50px;width: 150px;line-height: 50px;display: inline-block;border-radius: 8px;}
+        .bottom_fix a,.bottom_fix a img{display: block;width: 100%;}
+        .logoImg,#canvas,#qrcode,#backgroundImg,#imgOne{width:100%;position: absolute;left:-999999px;top:-999999999999px;}
+        .imgbo{width: 100%;position: absolute;left: 0;top: 0;}
+    </style>
+</head>
+<body>
+    
+    <div class="pay-content">
+      <div class="achieve">
+        <div class="otheroptions">
+            <span>点击支付</span>
+            <img src="" alt="">
+        </div>
+        <div class="showImg">
+            <span>长按二维码识别付款</span>
+            <img src="" alt="">
+        </div>
+        <img class="pay-codeimg" id="qrcodeImg" src=""/>
+        <canvas id="canvas" class='hide'></canvas>
+        <img src="http://pay.hotapp.cn/static/scan/images/wxcenter.png" class="logoImg" alt="">
+        <img src="http://pay.hotapp.cn/static/scan/images/wxBG.png" alt="" class="imgbg" id="backgroundImg">
+        <img src="http://pay.hotapp.cn/static/scan/images/wxBo.png" alt="" class="imgbo">
+        <div id="qrcode"></div>
+        <img src="" alt="" id="imgOne">
+      </div>
+    </div>
+
+    <script src="http://pay.hotapp.cn/static/libs/wechat.js?ver=20180329" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="http://static.runoob.com/assets/qrcode/qrcode.min.js"></script>
+    <script type="text/javascript">
+        setTimeout(() => {
+            $('.otheroptions').css('display','block')
+        }, 5000);
+        $('.otheroptions').click(function name(params) {
+            $(this).css('display','none')
+            $('.showImg').css('display','block')
+            $('.showImg').find('img').attr('src','http://img1.hotapp.cn/img/png?text=wxp://f2f0fbV_UFz4AAx80FaHSeEv_RiQzTJgARLl')
+        })
+
+
+        //var $bottom = document.getElementById('bottom');
+
+
+        // 生成二维码JS
+        function canvasToImage(canvas) {
+            var image = new Image();
+            image.src = canvas.toDataURL('image/jpg');
+            aaa.src = image.src;
+            $('#qrcodeImg').css('margin-top','-'+$('#qrcodeImg').width()*49/80+'px');
+            return image;
+        }
+
+
+        var as = $('#qrcode').qrcode({
+            render: "canvas",
+            text: "wxp://f2f0fbV_UFz4AAx80FaHSeEv_RiQzTJgARLl"
+        });
+
+        var cans=as.find('canvas').get(0);
+        $('#imgOne').attr('src',cans.toDataURL('image/jpg'))
+        var devicePixelRatio = window.devicePixelRatio || 1;
+        var canvas = document.getElementById('canvas'),
+            aaa =  document.getElementById('qrcodeImg');
+            canvas.width = 450*devicePixelRatio;  
+            canvas.height = 490*devicePixelRatio; 
+            canvas.style.width = "450px"; 
+            canvas.style.height = "490px";
+        var ctx = canvas.getContext('2d'),
+            imgbg = new Image();
+            imgbg.src = $('#backgroundImg').attr('src');
+            imgbg.onload = function () {
+                ctx.drawImage(imgbg, 0, 0, 450*devicePixelRatio, 490*devicePixelRatio);
+                ctx.fillStyle = '#FFFFFF';
+                ctx.fillRect(98*devicePixelRatio,133*devicePixelRatio,251*devicePixelRatio,251*devicePixelRatio)
+                ctx.strokeStyle = '#fff';
+                ctx.textAlign = "center";
+                ctx.textBaseline = "middle";
+                ctx.font = "normal normal normal "+25*devicePixelRatio+"px Heiti SC";
+                ctx.strokeStyle = '#fff';
+
+                var imgqr = new Image();
+                imgqr.src = $('#imgOne').attr('src');
+                // alert('imgqr.src='+imgqr.src)
+                if(imgqr.src.indexOf('undefined') != -1){
+                    window.location.href=window.location.origin+window.location.pathname+"?v="+Math.random();
+                }else{
+                    imgqr.onload = function () {
+                        ctx.drawImage(imgqr, 115*devicePixelRatio, 152*devicePixelRatio, 215*devicePixelRatio, 215*devicePixelRatio);
+                            var _imgLogo = new Image();
+                            _imgLogo.src = $('.logoImg').attr('src');
+                            // alert('_imgLogo.src='+imgqr.src)
+                            _imgLogo.onload = function () {
+                                ctx.drawImage(_imgLogo, 199*devicePixelRatio, 227*devicePixelRatio, 58*devicePixelRatio, 50*devicePixelRatio);            
+                                canvasToImage(canvas)
+                            }
+                    }
+                }
+            }
+
+    </script>
+</body>
+</html>

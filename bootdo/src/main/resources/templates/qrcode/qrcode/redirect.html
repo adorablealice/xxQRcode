@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>test</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="Access-Control-Allow-Origin" content="*"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+    <script type="text/javascript" src="http://static.runoob.com/assets/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://static.runoob.com/assets/qrcode/qrcode.min.js"></script>
+
+</head>
+<body>
+<canvas id="myCanvas" class="myCanvas" > </canvas>
+<div id="qrcode" style="width:100px; height:100px; margin-top:15px;"></div>
+
+<div id="wechat_background" class="footer">     </div>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    html, body{
+        width: 100%;
+        height: 100%;
+    }
+    .footer{
+        background: #1AAD19;
+        hight:auto;
+        width:100%;
+        min-height: 100%;
+        max-width: 100%;
+        z-index:-1;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .myCanvas{
+        height: 200px;
+        width: 200px;
+        z-index: 0;
+    }
+</style>
+<script type="text/javascript" th:inline="javascript">
+    var query = [[${query}]];
+    var platform = [[${platform}]];
+    var md5 = [[${md5}]];
+    switch (platform) {
+        case ("Ali"):
+            window.location.href = query;
+            break;
+        case ("Micro"):
+          //makeCode(query);
+
+            var c=document.getElementById("myCanvas");
+            var ctx=c.getContext("2d");
+            var img=makeCode(query);
+            img.onload = function() {
+                ctx.drawImage(img,10,10);
+            }
+
+            var wechat_background = document.getElementById("wechat_background");
+            var wxBo = document.createElement("img");
+            wxBo.src = "http://pay.hotapp.cn/static/scan/images/wxBo.png";
+            wxBo.style.height = "100%";
+            wxBo.style.width = "100%";
+            wxBo.style.maxHeight="100%";
+            wxBo.style.maxWidth="100%";
+            wechat_background.appendChild(wxBo);
+
+            var wxBG = document.createElement("img");
+            wxBG.src = "http://pay.hotapp.cn/static/scan/images/wxBG.png";
+            wxBG.style.height = "100%";
+            wxBG.style.width = "100%";
+            wxBG.style.maxHeight="100%";
+            wxBG.style.maxWidth="100%";
+            wechat_background.appendChild(wxBG);
+
+            break;
+        case ("qq"):
+            makeCode(query);
+            break;
+        case ("md5"):
+            makeCode("http://192.168.1.3:81/qrcode/qrcode/getResult?" + md5);
+            break;
+        default:
+            alert("error");
+            break;
+    }
+
+    function makeCode(query) {
+        var qrcode = new QRCode(document.getElementById("qrcode"), {
+            width: 200,
+            height: 200
+        });
+        qrcode.makeCode(query);
+    }
+</script>
+
+
+</body>
+</html>

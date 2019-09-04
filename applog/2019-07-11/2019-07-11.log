@@ -1,0 +1,1615 @@
+2019-07-11 15:10:01 -Starting BootdoApplication on LAPTOP-M9CMSSPO with PID 8768 (C:\Users\ZZX\Downloads\bootdo\bootdo\target\classes started by ZZX in C:\Users\ZZX\Downloads\bootdo)
+2019-07-11 15:10:01 -Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+2019-07-11 15:10:01 -The following profiles are active: dev
+2019-07-11 15:10:01 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@54e1c68b: startup date [Thu Jul 11 15:10:01 CST 2019]; root of context hierarchy
+2019-07-11 15:10:03 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-11 15:10:04 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fe480969] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-11 15:10:04 -Bean 'shiroConfig' of type [com.bootdo.system.config.ShiroConfig$$EnhancerBySpringCGLIB$$f0a13810] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-11 15:10:05 -Bean 'userRealm' of type [com.bootdo.system.shiro.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-11 15:10:05 -Bean 'cacheManager2' of type [net.sf.ehcache.CacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-11 15:10:05 -Bean 'ehCacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-11 15:10:05 -Cache with name 'com.bootdo.system.shiro.UserRealm.authorizationCache' does not yet exist.  Creating now.
+2019-07-11 15:10:05 -Added EhCache named [com.bootdo.system.shiro.UserRealm.authorizationCache]
+2019-07-11 15:10:05 -Bean 'sessionDAO' of type [org.apache.shiro.session.mgt.eis.MemorySessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-11 15:10:05 -Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-11 15:10:05 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-11 15:10:05 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-11 15:10:06 -Tomcat initialized with port(s): 8889 (http)
+2019-07-11 15:10:06 -Initializing ProtocolHandler ["http-nio-8889"]
+2019-07-11 15:10:06 -Starting service [Tomcat]
+2019-07-11 15:10:06 -Starting Servlet Engine: Apache Tomcat/8.5.31
+2019-07-11 15:10:06 -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\jdk1.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\xftp\;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\jdk1.8\bin;D:\jdk1.8\bin\jre\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Users\ZZX\AppData\Local\Microsoft\WindowsApps;;D:\Fiddler;.]
+2019-07-11 15:10:06 -Initializing Spring embedded WebApplicationContext
+2019-07-11 15:10:06 -Root WebApplicationContext: initialization completed in 5287 ms
+2019-07-11 15:10:06 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-07-11 15:10:06 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-07-11 15:10:06 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-07-11 15:10:06 -Mapping filter: 'requestContextFilter' to: [/*]
+2019-07-11 15:10:06 -Filter xssFilter was not registered (disabled)
+2019-07-11 15:10:06 -Mapping filter: 'webStatFilter' to urls: [/*]
+2019-07-11 15:10:06 -Mapping filter: 'shiroFilterFactoryBean' to: [/*]
+2019-07-11 15:10:06 -Servlet statViewServlet mapped to [/druid/*]
+2019-07-11 15:10:06 -Servlet dispatcherServlet mapped to [/]
+2019-07-11 15:10:08 -init datasource error, url: jdbc:mysql://127.0.0.1:3306/bootdo?useUnicode=true&characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1454)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:734)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1776)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1704)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:581)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$116/208043846.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:724)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:474)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1256)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1105)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$116/208043846.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:724)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:474)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1256)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1105)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$116/208043846.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:724)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:474)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1256)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1105)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$116/208043846.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1350)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:580)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$116/208043846.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at com.bootdo.BootdoApplication.main(BootdoApplication.java:21)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 106 common frames omitted
+2019-07-11 15:10:08 -{dataSource-1} init error
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1454)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:734)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1776)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1704)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:581)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$116/208043846.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:724)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:474)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1256)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1105)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$116/208043846.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:724)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:474)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1256)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1105)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$116/208043846.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:724)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:474)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1256)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1105)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$116/208043846.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1350)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:580)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$116/208043846.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at com.bootdo.BootdoApplication.main(BootdoApplication.java:21)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 106 common frames omitted
+2019-07-11 15:10:08 -{dataSource-1} inited
+2019-07-11 15:10:08 -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'modelController': Unsatisfied dependency expressed through field 'repositoryService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'repositoryService' defined in class path resource [com/bootdo/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'repositoryService' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'processEngine' defined in class path resource [com/bootdo/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'processEngine' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'processEngineConfiguration' defined in class path resource [com/bootdo/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'processEngineConfiguration' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/bootdo/common/config/DruidDBConfig.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2019-07-11 15:10:08 -Stopping service [Tomcat]
+2019-07-11 15:10:08 -
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-07-11 15:10:08 -Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'modelController': Unsatisfied dependency expressed through field 'repositoryService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'repositoryService' defined in class path resource [com/bootdo/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'repositoryService' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'processEngine' defined in class path resource [com/bootdo/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'processEngine' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'processEngineConfiguration' defined in class path resource [com/bootdo/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'processEngineConfiguration' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/bootdo/common/config/DruidDBConfig.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:587)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1350)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:580)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$116/208043846.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at com.bootdo.BootdoApplication.main(BootdoApplication.java:21)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'repositoryService' defined in class path resource [com/bootdo/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'repositoryService' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'processEngine' defined in class path resource [com/bootdo/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'processEngine' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'processEngineConfiguration' defined in class path resource [com/bootdo/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'processEngineConfiguration' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/bootdo/common/config/DruidDBConfig.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:732)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:474)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1256)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1105)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$116/208043846.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'processEngine' defined in class path resource [com/bootdo/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'processEngine' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'processEngineConfiguration' defined in class path resource [com/bootdo/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'processEngineConfiguration' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/bootdo/common/config/DruidDBConfig.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:732)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:474)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1256)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1105)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$116/208043846.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:724)
+	... 34 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'processEngineConfiguration' defined in class path resource [com/bootdo/activiti/config/ActivitiConfig.class]: Unsatisfied dependency expressed through method 'processEngineConfiguration' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/bootdo/common/config/DruidDBConfig.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:732)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:474)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1256)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1105)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$116/208043846.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:724)
+	... 49 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/bootdo/common/config/DruidDBConfig.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1708)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:581)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$116/208043846.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:724)
+	... 64 common frames omitted
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1454)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:734)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1776)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1704)
+	... 76 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 106 common frames omitted
+2019-07-11 15:10:33 -Starting BootdoApplication on LAPTOP-M9CMSSPO with PID 2032 (C:\Users\ZZX\Downloads\bootdo\bootdo\target\classes started by ZZX in C:\Users\ZZX\Downloads\bootdo)
+2019-07-11 15:10:33 -Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+2019-07-11 15:10:33 -The following profiles are active: dev
+2019-07-11 15:10:34 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6fd83fc1: startup date [Thu Jul 11 15:10:34 CST 2019]; root of context hierarchy
+2019-07-11 15:10:35 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-11 15:10:36 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$56ea1e1f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-11 15:10:36 -Bean 'shiroConfig' of type [com.bootdo.system.config.ShiroConfig$$EnhancerBySpringCGLIB$$49434cc6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-11 15:10:37 -Bean 'userRealm' of type [com.bootdo.system.shiro.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-11 15:10:37 -Bean 'cacheManager2' of type [net.sf.ehcache.CacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-11 15:10:37 -Bean 'ehCacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-11 15:10:37 -Cache with name 'com.bootdo.system.shiro.UserRealm.authorizationCache' does not yet exist.  Creating now.
+2019-07-11 15:10:37 -Added EhCache named [com.bootdo.system.shiro.UserRealm.authorizationCache]
+2019-07-11 15:10:37 -Bean 'sessionDAO' of type [org.apache.shiro.session.mgt.eis.MemorySessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-11 15:10:37 -Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-11 15:10:37 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-11 15:10:37 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-11 15:10:37 -Tomcat initialized with port(s): 8889 (http)
+2019-07-11 15:10:37 -Initializing ProtocolHandler ["http-nio-8889"]
+2019-07-11 15:10:37 -Starting service [Tomcat]
+2019-07-11 15:10:37 -Starting Servlet Engine: Apache Tomcat/8.5.31
+2019-07-11 15:10:37 -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\jdk1.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\xftp\;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\jdk1.8\bin;D:\jdk1.8\bin\jre\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Users\ZZX\AppData\Local\Microsoft\WindowsApps;;D:\Fiddler;.]
+2019-07-11 15:10:38 -Initializing Spring embedded WebApplicationContext
+2019-07-11 15:10:38 -Root WebApplicationContext: initialization completed in 4136 ms
+2019-07-11 15:10:38 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-07-11 15:10:38 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-07-11 15:10:38 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-07-11 15:10:38 -Mapping filter: 'requestContextFilter' to: [/*]
+2019-07-11 15:10:38 -Filter xssFilter was not registered (disabled)
+2019-07-11 15:10:38 -Mapping filter: 'webStatFilter' to urls: [/*]
+2019-07-11 15:10:38 -Mapping filter: 'shiroFilterFactoryBean' to: [/*]
+2019-07-11 15:10:38 -Servlet statViewServlet mapped to [/druid/*]
+2019-07-11 15:10:38 -Servlet dispatcherServlet mapped to [/]
+2019-07-11 15:10:39 -{dataSource-1} inited
+2019-07-11 15:10:40 -ProcessEngine default created
+2019-07-11 15:10:41 -ApplicationContext registed-->org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6fd83fc1: startup date [Thu Jul 11 15:10:34 CST 2019]; root of context hierarchy
+2019-07-11 15:10:41 -Using default implementation for ThreadExecutor
+2019-07-11 15:10:41 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-07-11 15:10:41 -Quartz Scheduler v.2.2.1 created.
+2019-07-11 15:10:41 -RAMJobStore initialized.
+2019-07-11 15:10:41 -Scheduler meta-data: Quartz Scheduler (v2.2.1) 'schedulerFactoryBean' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-07-11 15:10:41 -Quartz scheduler 'schedulerFactoryBean' initialized from an externally provided properties instance.
+2019-07-11 15:10:41 -Quartz scheduler version: 2.2.1
+2019-07-11 15:10:41 -JobFactory set to: com.bootdo.common.quartz.factory.JobFactory@7e58f697
+2019-07-11 15:10:41 -Initializing ExecutorService  'clientInboundChannelExecutor'
+2019-07-11 15:10:41 -Initializing ExecutorService  'clientOutboundChannelExecutor'
+2019-07-11 15:10:42 -Mapped "{[/activiti/model/{id}],methods=[DELETE]}" onto public com.bootdo.common.utils.R com.bootdo.activiti.controller.ModelController.remove(java.lang.String)
+2019-07-11 15:10:42 -Mapped "{[/activiti/model/list],methods=[GET]}" onto com.bootdo.common.utils.PageUtils com.bootdo.activiti.controller.ModelController.list(int,int)
+2019-07-11 15:10:42 -Mapped "{[/activiti/model/batchRemove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.activiti.controller.ModelController.batchRemove(java.lang.String[])
+2019-07-11 15:10:42 -Mapped "{[/activiti/model],methods=[GET]}" onto org.springframework.web.servlet.ModelAndView com.bootdo.activiti.controller.ModelController.model()
+2019-07-11 15:10:42 -Mapped "{[/activiti/editor/stencilset],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.bootdo.activiti.controller.ModelController.getStencilset()
+2019-07-11 15:10:42 -Mapped "{[/activiti/model/export/{id}],methods=[GET]}" onto public void com.bootdo.activiti.controller.ModelController.exportToXml(java.lang.String,javax.servlet.http.HttpServletResponse)
+2019-07-11 15:10:42 -Mapped "{[/activiti/model/edit/{id}],methods=[GET]}" onto public void com.bootdo.activiti.controller.ModelController.edit(javax.servlet.http.HttpServletResponse,java.lang.String)
+2019-07-11 15:10:42 -Mapped "{[/activiti/model/{modelId}/save],methods=[PUT]}" onto public void com.bootdo.activiti.controller.ModelController.saveModel(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2019-07-11 15:10:42 -Mapped "{[/activiti/model/deploy/{id}],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.activiti.controller.ModelController.deploy(java.lang.String) throws java.lang.Exception
+2019-07-11 15:10:42 -Mapped "{[/activiti/model/add]}" onto public void com.bootdo.activiti.controller.ModelController.newModel(javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2019-07-11 15:10:42 -Mapped "{[/activiti/model/{modelId}/json],methods=[GET]}" onto public com.fasterxml.jackson.databind.node.ObjectNode com.bootdo.activiti.controller.ModelController.getEditorJson(java.lang.String)
+2019-07-11 15:10:42 -Mapped "{[/activiti/process/add],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.bootdo.activiti.controller.ProcessController.add()
+2019-07-11 15:10:42 -Mapped "{[/activiti/process/remove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.activiti.controller.ProcessController.remove(java.lang.String)
+2019-07-11 15:10:42 -Mapped "{[/activiti/process/list],methods=[GET]}" onto com.bootdo.common.utils.PageUtils com.bootdo.activiti.controller.ProcessController.list(int,int)
+2019-07-11 15:10:42 -Mapped "{[/activiti/process/batchRemove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.activiti.controller.ProcessController.batchRemove(java.lang.String[])
+2019-07-11 15:10:42 -Mapped "{[/activiti/process],methods=[GET]}" onto org.springframework.web.servlet.ModelAndView com.bootdo.activiti.controller.ProcessController.process()
+2019-07-11 15:10:42 -Mapped "{[/activiti/process/save],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.activiti.controller.ProcessController.deploy(java.lang.String,java.lang.String,org.springframework.web.multipart.MultipartFile)
+2019-07-11 15:10:42 -Mapped "{[/activiti/process/resource/read/{xml}/{id}]}" onto public void com.bootdo.activiti.controller.ProcessController.resourceRead(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2019-07-11 15:10:42 -Mapped "{[/activiti/process/convertToModel/{procDefId}]}" onto public com.bootdo.common.utils.R com.bootdo.activiti.controller.ProcessController.convertToModel(java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes) throws java.io.UnsupportedEncodingException,javax.xml.stream.XMLStreamException
+2019-07-11 15:10:42 -Mapped "{[/act/salary/form],methods=[GET]}" onto java.lang.String com.bootdo.activiti.controller.SalaryController.add()
+2019-07-11 15:10:42 -Mapped "{[/act/salary/remove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.activiti.controller.SalaryController.remove(java.lang.String)
+2019-07-11 15:10:42 -Mapped "{[/act/salary/batchRemove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.activiti.controller.SalaryController.remove(java.lang.String[])
+2019-07-11 15:10:42 -Mapped "{[/act/salary/update]}" onto public com.bootdo.common.utils.R com.bootdo.activiti.controller.SalaryController.update(com.bootdo.activiti.domain.SalaryDO)
+2019-07-11 15:10:42 -Mapped "{[/act/salary/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.activiti.controller.SalaryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2019-07-11 15:10:42 -Mapped "{[/act/salary/form/{taskId}],methods=[GET]}" onto java.lang.String com.bootdo.activiti.controller.SalaryController.edit(java.lang.String,org.springframework.ui.Model)
+2019-07-11 15:10:42 -Mapped "{[/act/salary],methods=[GET]}" onto java.lang.String com.bootdo.activiti.controller.SalaryController.Salary()
+2019-07-11 15:10:42 -Mapped "{[/act/salary/save],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.activiti.controller.SalaryController.saveOrUpdate(com.bootdo.activiti.domain.SalaryDO)
+2019-07-11 15:10:42 -Mapped "{[/activiti/task/form/{procDefId}/{taskId}],methods=[GET]}" onto public void com.bootdo.activiti.controller.TaskController.form(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2019-07-11 15:10:42 -Mapped "{[/activiti/task/gotoList],methods=[GET]}" onto com.bootdo.common.utils.PageUtils com.bootdo.activiti.controller.TaskController.list(int,int)
+2019-07-11 15:10:42 -Mapped "{[/activiti/task/form/{procDefId}],methods=[GET]}" onto public void com.bootdo.activiti.controller.TaskController.startForm(java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2019-07-11 15:10:42 -Mapped "{[/activiti/task/goto],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.bootdo.activiti.controller.TaskController.gotoTask()
+2019-07-11 15:10:42 -Mapped "{[/activiti/task/todoList],methods=[GET]}" onto java.util.List<com.bootdo.activiti.vo.TaskVO> com.bootdo.activiti.controller.TaskController.todoList()
+2019-07-11 15:10:42 -Mapped "{[/activiti/task/trace/photo/{procDefId}/{execId}]}" onto public void com.bootdo.activiti.controller.TaskController.tracePhoto(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2019-07-11 15:10:42 -Mapped "{[/activiti/task/todo],methods=[GET]}" onto org.springframework.web.servlet.ModelAndView com.bootdo.activiti.controller.TaskController.todo()
+2019-07-11 15:10:42 -Mapped "{[/blog/open/post/{cid}],methods=[GET]}" onto java.lang.String com.bootdo.blog.controller.BlogController.post(java.lang.Long,org.springframework.ui.Model)
+2019-07-11 15:10:42 -Mapped "{[/blog/open/page/{categories}],methods=[GET]}" onto java.lang.String com.bootdo.blog.controller.BlogController.about(java.lang.String,org.springframework.ui.Model)
+2019-07-11 15:10:42 -Mapped "{[/blog],methods=[GET]}" onto java.lang.String com.bootdo.blog.controller.BlogController.blog()
+2019-07-11 15:10:42 -Mapped "{[/blog/open/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.blog.controller.BlogController.opentList(java.util.Map<java.lang.String, java.lang.Object>)
+2019-07-11 15:10:42 -Mapped "{[/blog/bContent/add],methods=[GET]}" onto java.lang.String com.bootdo.blog.controller.ContentController.add()
+2019-07-11 15:10:42 -Mapped "{[/blog/bContent/remove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.blog.controller.ContentController.remove(java.lang.Long)
+2019-07-11 15:10:42 -Mapped "{[/blog/bContent/batchRemove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.blog.controller.ContentController.remove(java.lang.Long[])
+2019-07-11 15:10:42 -Mapped "{[/blog/bContent/update]}" onto public com.bootdo.common.utils.R com.bootdo.blog.controller.ContentController.update(com.bootdo.blog.domain.ContentDO)
+2019-07-11 15:10:42 -Mapped "{[/blog/bContent/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.blog.controller.ContentController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2019-07-11 15:10:42 -Mapped "{[/blog/bContent/save],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.blog.controller.ContentController.save(com.bootdo.blog.domain.ContentDO)
+2019-07-11 15:10:42 -Mapped "{[/blog/bContent/edit/{cid}],methods=[GET]}" onto java.lang.String com.bootdo.blog.controller.ContentController.edit(java.lang.Long,org.springframework.ui.Model)
+2019-07-11 15:10:42 -Mapped "{[/blog/bContent],methods=[GET]}" onto java.lang.String com.bootdo.blog.controller.ContentController.bContent()
+2019-07-11 15:10:42 -Mapped "{[/common/dict/add],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.DictController.add()
+2019-07-11 15:10:42 -Mapped "{[/common/dict/remove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.DictController.remove(java.lang.Long)
+2019-07-11 15:10:42 -Mapped "{[/common/dict/batchRemove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.DictController.remove(java.lang.Long[])
+2019-07-11 15:10:42 -Mapped "{[/common/dict/update]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.DictController.update(com.bootdo.common.domain.DictDO)
+2019-07-11 15:10:42 -Mapped "{[/common/dict/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.common.controller.DictController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2019-07-11 15:10:42 -Mapped "{[/common/dict/save],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.DictController.save(com.bootdo.common.domain.DictDO)
+2019-07-11 15:10:42 -Mapped "{[/common/dict/type],methods=[GET]}" onto public java.util.List<com.bootdo.common.domain.DictDO> com.bootdo.common.controller.DictController.listType()
+2019-07-11 15:10:42 -Mapped "{[/common/dict/edit/{id}],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.DictController.edit(java.lang.Long,org.springframework.ui.Model)
+2019-07-11 15:10:42 -Mapped "{[/common/dict],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.DictController.dict()
+2019-07-11 15:10:42 -Mapped "{[/common/dict/add/{type}/{description}],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.DictController.addD(org.springframework.ui.Model,java.lang.String,java.lang.String)
+2019-07-11 15:10:42 -Mapped "{[/common/dict/list/{type}],methods=[GET]}" onto public java.util.List<com.bootdo.common.domain.DictDO> com.bootdo.common.controller.DictController.listByType(java.lang.String)
+2019-07-11 15:10:42 -Mapped "{[/common/sysFile/add],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.FileController.add()
+2019-07-11 15:10:42 -Mapped "{[/common/sysFile/remove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.FileController.remove(java.lang.Long,javax.servlet.http.HttpServletRequest)
+2019-07-11 15:10:42 -Mapped "{[/common/sysFile/batchRemove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.FileController.remove(java.lang.Long[])
+2019-07-11 15:10:42 -Mapped "{[/common/sysFile/update]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.FileController.update(com.bootdo.common.domain.FileDO)
+2019-07-11 15:10:42 -Mapped "{[/common/sysFile/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.common.controller.FileController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2019-07-11 15:10:42 -Mapped "{[/common/sysFile/save],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.FileController.save(com.bootdo.common.domain.FileDO)
+2019-07-11 15:10:42 -Mapped "{[/common/sysFile/info/{id}]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.FileController.info(java.lang.Long)
+2019-07-11 15:10:42 -Mapped "{[/common/sysFile/edit],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.FileController.edit(java.lang.Long,org.springframework.ui.Model)
+2019-07-11 15:10:42 -Mapped "{[/common/sysFile/upload],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.common.controller.FileController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest)
+2019-07-11 15:10:42 -Mapped "{[/common/sysFile],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.FileController.sysFile(org.springframework.ui.Model)
+2019-07-11 15:10:42 -Mapped "{[/common/generator/update],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.common.controller.GeneratorController.update(java.util.Map<java.lang.String, java.lang.Object>)
+2019-07-11 15:10:42 -Mapped "{[/common/generator/list],methods=[GET]}" onto java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.bootdo.common.controller.GeneratorController.list()
+2019-07-11 15:10:42 -Mapped "{[/common/generator/code/{tableName}]}" onto public void com.bootdo.common.controller.GeneratorController.code(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.io.IOException
+2019-07-11 15:10:42 -Mapped "{[/common/generator],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.GeneratorController.generator()
+2019-07-11 15:10:42 -Mapped "{[/common/generator/edit],methods=[GET]}" onto public java.lang.String com.bootdo.common.controller.GeneratorController.edit(org.springframework.ui.Model)
+2019-07-11 15:10:42 -Mapped "{[/common/generator/batchCode]}" onto public void com.bootdo.common.controller.GeneratorController.batchCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.io.IOException
+2019-07-11 15:10:42 -Mapped "{[/common/job/add],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.JobController.add()
+2019-07-11 15:10:42 -Mapped "{[/common/job/remove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.JobController.remove(java.lang.Long)
+2019-07-11 15:10:42 -Mapped "{[/common/job/batchRemove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.JobController.remove(java.lang.Long[])
+2019-07-11 15:10:42 -Mapped "{[/common/job/update],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.JobController.update(com.bootdo.common.domain.TaskDO)
+2019-07-11 15:10:42 -Mapped "{[/common/job/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.common.controller.JobController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2019-07-11 15:10:42 -Mapped "{[/common/job/save],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.JobController.save(com.bootdo.common.domain.TaskDO)
+2019-07-11 15:10:42 -Mapped "{[/common/job/info/{id}]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.JobController.info(java.lang.Long)
+2019-07-11 15:10:42 -Mapped "{[/common/job/edit/{id}],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.JobController.edit(java.lang.Long,org.springframework.ui.Model)
+2019-07-11 15:10:42 -Mapped "{[/common/job],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.JobController.taskScheduleJob()
+2019-07-11 15:10:42 -Mapped "{[/common/job/changeJobStatus],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.JobController.changeJobStatus(java.lang.Long,java.lang.String)
+2019-07-11 15:10:42 -Mapped "{[/common/log/remove],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.common.controller.LogController.remove(java.lang.Long)
+2019-07-11 15:10:42 -Mapped "{[/common/log],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.LogController.log()
+2019-07-11 15:10:42 -Mapped "{[/common/log/list],methods=[GET]}" onto com.bootdo.common.domain.PageDO<com.bootdo.common.domain.LogDO> com.bootdo.common.controller.LogController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2019-07-11 15:10:42 -Mapped "{[/common/log/batchRemove],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.common.controller.LogController.batchRemove(java.lang.Long[])
+2019-07-11 15:10:42 -Mapped "{[/error]}" onto public com.bootdo.common.utils.R com.bootdo.common.exception.MainsiteErrorController.handleError(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-07-11 15:10:42 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView com.bootdo.common.exception.MainsiteErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-07-11 15:10:42 -Mapped "{[/oa/notify/add],methods=[GET]}" onto java.lang.String com.bootdo.oa.controller.NotifyController.add()
+2019-07-11 15:10:42 -Mapped "{[/oa/notify/remove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.oa.controller.NotifyController.remove(java.lang.Long)
+2019-07-11 15:10:42 -Mapped "{[/oa/notify/batchRemove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.oa.controller.NotifyController.remove(java.lang.Long[])
+2019-07-11 15:10:42 -Mapped "{[/oa/notify/update]}" onto public com.bootdo.common.utils.R com.bootdo.oa.controller.NotifyController.update(com.bootdo.oa.domain.NotifyDO)
+2019-07-11 15:10:42 -Mapped "{[/oa/notify/read/{id}],methods=[GET]}" onto java.lang.String com.bootdo.oa.controller.NotifyController.read(java.lang.Long,org.springframework.ui.Model)
+2019-07-11 15:10:42 -Mapped "{[/oa/notify/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.oa.controller.NotifyController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2019-07-11 15:10:42 -Mapped "{[/oa/notify/save],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.oa.controller.NotifyController.save(com.bootdo.oa.domain.NotifyDO)
+2019-07-11 15:10:42 -Mapped "{[/oa/notify/message],methods=[GET]}" onto com.bootdo.common.utils.PageUtils com.bootdo.oa.controller.NotifyController.message()
+2019-07-11 15:10:42 -Mapped "{[/oa/notify/edit/{id}],methods=[GET]}" onto java.lang.String com.bootdo.oa.controller.NotifyController.edit(java.lang.Long,org.springframework.ui.Model)
+2019-07-11 15:10:42 -Mapped "{[/oa/notify/selfList],methods=[GET]}" onto com.bootdo.common.utils.PageUtils com.bootdo.oa.controller.NotifyController.selfList(java.util.Map<java.lang.String, java.lang.Object>)
+2019-07-11 15:10:42 -Mapped "{[/oa/notify/selfNotify],methods=[GET]}" onto java.lang.String com.bootdo.oa.controller.NotifyController.selefNotify()
+2019-07-11 15:10:42 -Mapped "{[/oa/notify],methods=[GET]}" onto java.lang.String com.bootdo.oa.controller.NotifyController.oaNotify()
+2019-07-11 15:10:42 -Mapped "{[/qrcode/qrcode/add],methods=[GET]}" onto java.lang.String com.bootdo.qrcode.controller.QrcodeController.add()
+2019-07-11 15:10:42 -Mapped "{[/qrcode/qrcode/remove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.qrcode.controller.QrcodeController.remove(java.lang.Integer)
+2019-07-11 15:10:42 -Mapped "{[/qrcode/qrcode/batchRemove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.qrcode.controller.QrcodeController.remove(java.lang.Integer[])
+2019-07-11 15:10:42 -Mapped "{[/qrcode/qrcode/update]}" onto public com.bootdo.common.utils.R com.bootdo.qrcode.controller.QrcodeController.update(com.bootdo.qrcode.domain.QrcodeDO)
+2019-07-11 15:10:42 -Mapped "{[/qrcode/qrcode/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.qrcode.controller.QrcodeController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2019-07-11 15:10:42 -Mapped "{[/qrcode/qrcode/save],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.qrcode.controller.QrcodeController.save(com.bootdo.qrcode.domain.QrcodeDO)
+2019-07-11 15:10:42 -Mapped "{[/qrcode/qrcode],methods=[GET]}" onto java.lang.String com.bootdo.qrcode.controller.QrcodeController.Qrcode()
+2019-07-11 15:10:42 -Mapped "{[/qrcode/qrcode/edit/{id}],methods=[GET]}" onto java.lang.String com.bootdo.qrcode.controller.QrcodeController.edit(java.lang.Integer,org.springframework.ui.Model)
+2019-07-11 15:10:42 -Mapped "{[/system/sysDept/add/{pId}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.DeptController.add(java.lang.Long,org.springframework.ui.Model)
+2019-07-11 15:10:42 -Mapped "{[/system/sysDept/remove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.system.controller.DeptController.remove(java.lang.Long)
+2019-07-11 15:10:42 -Mapped "{[/system/sysDept/batchRemove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.system.controller.DeptController.remove(java.lang.Long[])
+2019-07-11 15:10:42 -Mapped "{[/system/sysDept/update]}" onto public com.bootdo.common.utils.R com.bootdo.system.controller.DeptController.update(com.bootdo.system.domain.DeptDO)
+2019-07-11 15:10:42 -Mapped "{[/system/sysDept/list],methods=[GET]}" onto public java.util.List<com.bootdo.system.domain.DeptDO> com.bootdo.system.controller.DeptController.list()
+2019-07-11 15:10:42 -Mapped "{[/system/sysDept/save],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.system.controller.DeptController.save(com.bootdo.system.domain.DeptDO)
+2019-07-11 15:10:42 -Mapped "{[/system/sysDept/tree],methods=[GET]}" onto public com.bootdo.common.domain.Tree<com.bootdo.system.domain.DeptDO> com.bootdo.system.controller.DeptController.tree()
+2019-07-11 15:10:42 -Mapped "{[/system/sysDept],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.DeptController.dept()
+2019-07-11 15:10:42 -Mapped "{[/system/sysDept/treeView],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.DeptController.treeView()
+2019-07-11 15:10:42 -Mapped "{[/system/sysDept/edit/{deptId}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.DeptController.edit(java.lang.Long,org.springframework.ui.Model)
+2019-07-11 15:10:42 -Mapped "{[/index],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.index(org.springframework.ui.Model)
+2019-07-11 15:10:42 -Mapped "{[/main],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.main()
+2019-07-11 15:10:42 -Mapped "{[/logout],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.logout()
+2019-07-11 15:10:42 -Mapped "{[/getVerify],methods=[GET]}" onto public void com.bootdo.system.controller.LoginController.getVerify(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-07-11 15:10:42 -Mapped "{[/ || ],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.welcome(org.springframework.ui.Model)
+2019-07-11 15:10:42 -Mapped "{[/login],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.LoginController.ajaxLogin(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-07-11 15:10:42 -Mapped "{[/login],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.login(org.springframework.ui.Model)
+2019-07-11 15:10:42 -Mapped "{[/sys/menu/add/{pId}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.MenuController.add(org.springframework.ui.Model,java.lang.Long)
+2019-07-11 15:10:42 -Mapped "{[/sys/menu/remove],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.MenuController.remove(java.lang.Long)
+2019-07-11 15:10:42 -Mapped "{[/sys/menu/update],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.MenuController.update(com.bootdo.system.domain.MenuDO)
+2019-07-11 15:10:42 -Mapped "{[/sys/menu/list]}" onto java.util.List<com.bootdo.system.domain.MenuDO> com.bootdo.system.controller.MenuController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2019-07-11 15:10:42 -Mapped "{[/sys/menu/save],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.MenuController.save(com.bootdo.system.domain.MenuDO)
+2019-07-11 15:10:42 -Mapped "{[/sys/menu/tree/{roleId}],methods=[GET]}" onto com.bootdo.common.domain.Tree<com.bootdo.system.domain.MenuDO> com.bootdo.system.controller.MenuController.tree(java.lang.Long)
+2019-07-11 15:10:42 -Mapped "{[/sys/menu/tree],methods=[GET]}" onto com.bootdo.common.domain.Tree<com.bootdo.system.domain.MenuDO> com.bootdo.system.controller.MenuController.tree()
+2019-07-11 15:10:42 -Mapped "{[/sys/menu],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.MenuController.menu(org.springframework.ui.Model)
+2019-07-11 15:10:42 -Mapped "{[/sys/menu/edit/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.MenuController.edit(org.springframework.ui.Model,java.lang.Long)
+2019-07-11 15:10:42 -Mapped "{[/sys/role/add],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.RoleController.add()
+2019-07-11 15:10:42 -Mapped "{[/sys/role/update],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.RoleController.update(com.bootdo.system.domain.RoleDO)
+2019-07-11 15:10:42 -Mapped "{[/sys/role/list],methods=[GET]}" onto java.util.List<com.bootdo.system.domain.RoleDO> com.bootdo.system.controller.RoleController.list()
+2019-07-11 15:10:42 -Mapped "{[/sys/role/remove],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.RoleController.save(java.lang.Long)
+2019-07-11 15:10:42 -Mapped "{[/sys/role/save],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.RoleController.save(com.bootdo.system.domain.RoleDO)
+2019-07-11 15:10:42 -Mapped "{[/sys/role/batchRemove],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.RoleController.batchRemove(java.lang.Long[])
+2019-07-11 15:10:42 -Mapped "{[/sys/role],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.RoleController.role()
+2019-07-11 15:10:42 -Mapped "{[/sys/role/edit/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.RoleController.edit(java.lang.Long,org.springframework.ui.Model)
+2019-07-11 15:10:42 -Mapped "{[/sys/online/list]}" onto public java.util.List<com.bootdo.system.domain.UserOnline> com.bootdo.system.controller.SessionController.list()
+2019-07-11 15:10:42 -Mapped "{[/sys/online],methods=[GET]}" onto public java.lang.String com.bootdo.system.controller.SessionController.online()
+2019-07-11 15:10:42 -Mapped "{[/sys/online/forceLogout/{sessionId}]}" onto public com.bootdo.common.utils.R com.bootdo.system.controller.SessionController.forceLogout(java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2019-07-11 15:10:42 -Mapped "{[/sys/online/sessionList]}" onto public java.util.Collection<org.apache.shiro.session.Session> com.bootdo.system.controller.SessionController.sessionList()
+2019-07-11 15:10:42 -Mapped "{[/sys/user/exit],methods=[POST]}" onto boolean com.bootdo.system.controller.UserController.exit(java.util.Map<java.lang.String, java.lang.Object>)
+2019-07-11 15:10:42 -Mapped "{[/sys/user/add],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.UserController.add(org.springframework.ui.Model)
+2019-07-11 15:10:42 -Mapped "{[/sys/user/remove],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.UserController.remove(java.lang.Long)
+2019-07-11 15:10:42 -Mapped "{[/sys/user/update],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.UserController.update(com.bootdo.system.domain.UserDO)
+2019-07-11 15:10:42 -Mapped "{[/sys/user/list],methods=[GET]}" onto com.bootdo.common.utils.PageUtils com.bootdo.system.controller.UserController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2019-07-11 15:10:42 -Mapped "{[/sys/user/save],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.UserController.save(com.bootdo.system.domain.UserDO)
+2019-07-11 15:10:42 -Mapped "{[/sys/user/batchRemove],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.UserController.batchRemove(java.lang.Long[])
+2019-07-11 15:10:42 -Mapped "{[/sys/user/tree],methods=[GET]}" onto public com.bootdo.common.domain.Tree<com.bootdo.system.domain.DeptDO> com.bootdo.system.controller.UserController.tree()
+2019-07-11 15:10:42 -Mapped "{[/sys/user],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.UserController.user(org.springframework.ui.Model)
+2019-07-11 15:10:42 -Mapped "{[/sys/user/treeView],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.UserController.treeView()
+2019-07-11 15:10:42 -Mapped "{[/sys/user/adminResetPwd],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.UserController.adminResetPwd(com.bootdo.system.vo.UserVO)
+2019-07-11 15:10:42 -Mapped "{[/sys/user/personal],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.UserController.personal(org.springframework.ui.Model)
+2019-07-11 15:10:42 -Mapped "{[/sys/user/resetPwd],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.UserController.resetPwd(com.bootdo.system.vo.UserVO)
+2019-07-11 15:10:42 -Mapped "{[/sys/user/resetPwd/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.UserController.resetPwd(java.lang.Long,org.springframework.ui.Model)
+2019-07-11 15:10:42 -Mapped "{[/sys/user/uploadImg],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.UserController.uploadImg(org.springframework.web.multipart.MultipartFile,java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-07-11 15:10:42 -Mapped "{[/sys/user/updatePeronal],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.UserController.updatePeronal(com.bootdo.system.domain.UserDO)
+2019-07-11 15:10:42 -Mapped "{[/sys/user/edit/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.UserController.edit(org.springframework.ui.Model,java.lang.Long)
+2019-07-11 15:10:42 -Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-07-11 15:10:42 -Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-07-11 15:10:42 -Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-07-11 15:10:42 -Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-07-11 15:10:42 -Initializing ExecutorService  'messageBrokerTaskScheduler'
+2019-07-11 15:10:43 -Mapped URL path [/endpointChat/**] onto handler of type [class org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler]
+2019-07-11 15:10:43 -Initializing ExecutorService  'brokerChannelExecutor'
+2019-07-11 15:10:43 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-11 15:10:43 -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6fd83fc1: startup date [Thu Jul 11 15:10:34 CST 2019]; root of context hierarchy
+2019-07-11 15:10:43 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-11 15:10:43 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-11 15:10:43 -Mapped URL path [/files/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-11 15:10:43 -Detected @ExceptionHandler methods in BDExceptionHandler
+2019-07-11 15:10:43 -[THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-07-11 15:10:45 -Registering beans for JMX exposure on startup
+2019-07-11 15:10:45 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-07-11 15:10:45 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-07-11 15:10:45 -Starting beans in phase 2147483647
+2019-07-11 15:10:45 -Context refreshed
+2019-07-11 15:10:45 -Found 1 custom documentation plugin(s)
+2019-07-11 15:10:45 -Scanning for api listing references
+2019-07-11 15:10:45 -Generating unique operation named: removeUsingPOST_1
+2019-07-11 15:10:45 -Generating unique operation named: addUsingGET_1
+2019-07-11 15:10:45 -Generating unique operation named: editUsingGET_1
+2019-07-11 15:10:45 -Generating unique operation named: listUsingGET_1
+2019-07-11 15:10:45 -Generating unique operation named: removeUsingPOST_2
+2019-07-11 15:10:45 -Generating unique operation named: removeUsingPOST_3
+2019-07-11 15:10:45 -Generating unique operation named: saveUsingPOST_1
+2019-07-11 15:10:45 -Generating unique operation named: updateUsingGET_1
+2019-07-11 15:10:45 -Generating unique operation named: updateUsingHEAD_1
+2019-07-11 15:10:45 -Generating unique operation named: updateUsingPOST_1
+2019-07-11 15:10:45 -Generating unique operation named: updateUsingPUT_1
+2019-07-11 15:10:45 -Generating unique operation named: updateUsingPATCH_1
+2019-07-11 15:10:45 -Generating unique operation named: updateUsingDELETE_1
+2019-07-11 15:10:45 -Generating unique operation named: updateUsingOPTIONS_1
+2019-07-11 15:10:45 -Generating unique operation named: updateUsingTRACE_1
+2019-07-11 15:10:45 -Generating unique operation named: addUsingGET_2
+2019-07-11 15:10:45 -Generating unique operation named: editUsingGET_2
+2019-07-11 15:10:45 -Generating unique operation named: listUsingGET_2
+2019-07-11 15:10:45 -Generating unique operation named: removeUsingPOST_4
+2019-07-11 15:10:45 -Generating unique operation named: removeUsingPOST_5
+2019-07-11 15:10:45 -Generating unique operation named: saveUsingPOST_2
+2019-07-11 15:10:45 -Generating unique operation named: updateUsingGET_2
+2019-07-11 15:10:45 -Generating unique operation named: updateUsingHEAD_2
+2019-07-11 15:10:45 -Generating unique operation named: updateUsingPOST_2
+2019-07-11 15:10:45 -Generating unique operation named: updateUsingPUT_2
+2019-07-11 15:10:45 -Generating unique operation named: updateUsingPATCH_2
+2019-07-11 15:10:45 -Generating unique operation named: updateUsingDELETE_2
+2019-07-11 15:10:45 -Generating unique operation named: updateUsingOPTIONS_2
+2019-07-11 15:10:45 -Generating unique operation named: updateUsingTRACE_2
+2019-07-11 15:10:45 -Generating unique operation named: addUsingGET_3
+2019-07-11 15:10:45 -Generating unique operation named: editUsingGET_3
+2019-07-11 15:10:46 -Generating unique operation named: listUsingGET_3
+2019-07-11 15:10:46 -Generating unique operation named: removeUsingPOST_6
+2019-07-11 15:10:46 -Generating unique operation named: removeUsingPOST_7
+2019-07-11 15:10:46 -Generating unique operation named: saveUsingPOST_3
+2019-07-11 15:10:46 -Generating unique operation named: updateUsingGET_3
+2019-07-11 15:10:46 -Generating unique operation named: updateUsingHEAD_3
+2019-07-11 15:10:46 -Generating unique operation named: updateUsingPOST_3
+2019-07-11 15:10:46 -Generating unique operation named: updateUsingPUT_3
+2019-07-11 15:10:46 -Generating unique operation named: updateUsingPATCH_3
+2019-07-11 15:10:46 -Generating unique operation named: updateUsingDELETE_3
+2019-07-11 15:10:46 -Generating unique operation named: updateUsingOPTIONS_3
+2019-07-11 15:10:46 -Generating unique operation named: updateUsingTRACE_3
+2019-07-11 15:10:46 -Generating unique operation named: editUsingGET_4
+2019-07-11 15:10:46 -Generating unique operation named: listUsingGET_4
+2019-07-11 15:10:46 -Generating unique operation named: updateUsingPOST_4
+2019-07-11 15:10:46 -Generating unique operation named: addUsingGET_4
+2019-07-11 15:10:46 -Generating unique operation named: editUsingGET_5
+2019-07-11 15:10:46 -Generating unique operation named: infoUsingGET_1
+2019-07-11 15:10:46 -Generating unique operation named: infoUsingHEAD_1
+2019-07-11 15:10:46 -Generating unique operation named: infoUsingPOST_1
+2019-07-11 15:10:46 -Generating unique operation named: infoUsingPUT_1
+2019-07-11 15:10:46 -Generating unique operation named: infoUsingPATCH_1
+2019-07-11 15:10:46 -Generating unique operation named: infoUsingDELETE_1
+2019-07-11 15:10:46 -Generating unique operation named: infoUsingOPTIONS_1
+2019-07-11 15:10:46 -Generating unique operation named: infoUsingTRACE_1
+2019-07-11 15:10:46 -Generating unique operation named: listUsingGET_5
+2019-07-11 15:10:46 -Generating unique operation named: removeUsingPOST_8
+2019-07-11 15:10:46 -Generating unique operation named: removeUsingPOST_9
+2019-07-11 15:10:46 -Generating unique operation named: saveUsingPOST_4
+2019-07-11 15:10:46 -Generating unique operation named: updateUsingPOST_5
+2019-07-11 15:10:46 -Generating unique operation named: listUsingGET_6
+2019-07-11 15:10:46 -Generating unique operation named: removeUsingPOST_10
+2019-07-11 15:10:46 -Generating unique operation named: welcomeUsingGET_1
+2019-07-11 15:10:46 -Generating unique operation named: addUsingGET_5
+2019-07-11 15:10:46 -Generating unique operation named: editUsingGET_6
+2019-07-11 15:10:46 -Generating unique operation named: listUsingGET_7
+2019-07-11 15:10:46 -Generating unique operation named: removeUsingPOST_11
+2019-07-11 15:10:46 -Generating unique operation named: saveUsingPOST_5
+2019-07-11 15:10:46 -Generating unique operation named: treeUsingGET_1
+2019-07-11 15:10:46 -Generating unique operation named: treeUsingGET_2
+2019-07-11 15:10:46 -Generating unique operation named: updateUsingPOST_6
+2019-07-11 15:10:46 -Generating unique operation named: batchRemoveUsingPOST_1
+2019-07-11 15:10:46 -Generating unique operation named: editUsingGET_7
+2019-07-11 15:10:46 -Generating unique operation named: listUsingGET_8
+2019-07-11 15:10:46 -Generating unique operation named: addUsingGET_6
+2019-07-11 15:10:46 -Generating unique operation named: editUsingGET_8
+2019-07-11 15:10:46 -Generating unique operation named: listUsingGET_9
+2019-07-11 15:10:46 -Generating unique operation named: removeUsingPOST_12
+2019-07-11 15:10:46 -Generating unique operation named: removeUsingPOST_13
+2019-07-11 15:10:46 -Generating unique operation named: saveUsingPOST_6
+2019-07-11 15:10:46 -Generating unique operation named: updateUsingGET_4
+2019-07-11 15:10:46 -Generating unique operation named: updateUsingHEAD_4
+2019-07-11 15:10:46 -Generating unique operation named: updateUsingPOST_7
+2019-07-11 15:10:46 -Generating unique operation named: updateUsingPUT_4
+2019-07-11 15:10:46 -Generating unique operation named: updateUsingPATCH_4
+2019-07-11 15:10:46 -Generating unique operation named: updateUsingDELETE_4
+2019-07-11 15:10:46 -Generating unique operation named: updateUsingOPTIONS_4
+2019-07-11 15:10:46 -Generating unique operation named: updateUsingTRACE_4
+2019-07-11 15:10:46 -Generating unique operation named: addUsingGET_7
+2019-07-11 15:10:46 -Generating unique operation named: batchRemoveUsingPOST_2
+2019-07-11 15:10:46 -Generating unique operation named: deployUsingPOST_1
+2019-07-11 15:10:46 -Generating unique operation named: listUsingGET_10
+2019-07-11 15:10:46 -Generating unique operation named: removeUsingPOST_14
+2019-07-11 15:10:46 -Generating unique operation named: addUsingGET_8
+2019-07-11 15:10:46 -Generating unique operation named: editUsingGET_9
+2019-07-11 15:10:46 -Generating unique operation named: listUsingGET_11
+2019-07-11 15:10:46 -Generating unique operation named: removeUsingPOST_15
+2019-07-11 15:10:46 -Generating unique operation named: removeUsingPOST_16
+2019-07-11 15:10:46 -Generating unique operation named: saveUsingPOST_7
+2019-07-11 15:10:46 -Generating unique operation named: updateUsingGET_5
+2019-07-11 15:10:46 -Generating unique operation named: updateUsingHEAD_5
+2019-07-11 15:10:46 -Generating unique operation named: updateUsingPOST_8
+2019-07-11 15:10:46 -Generating unique operation named: updateUsingPUT_5
+2019-07-11 15:10:46 -Generating unique operation named: updateUsingPATCH_5
+2019-07-11 15:10:46 -Generating unique operation named: updateUsingDELETE_5
+2019-07-11 15:10:46 -Generating unique operation named: updateUsingOPTIONS_5
+2019-07-11 15:10:46 -Generating unique operation named: updateUsingTRACE_5
+2019-07-11 15:10:46 -Generating unique operation named: addUsingGET_9
+2019-07-11 15:10:46 -Generating unique operation named: batchRemoveUsingPOST_3
+2019-07-11 15:10:46 -Generating unique operation named: editUsingGET_10
+2019-07-11 15:10:46 -Generating unique operation named: listUsingGET_12
+2019-07-11 15:10:46 -Generating unique operation named: saveUsingPOST_8
+2019-07-11 15:10:46 -Generating unique operation named: saveUsingPOST_9
+2019-07-11 15:10:46 -Generating unique operation named: updateUsingPOST_9
+2019-07-11 15:10:46 -Generating unique operation named: addUsingGET_10
+2019-07-11 15:10:46 -Generating unique operation named: editUsingGET_11
+2019-07-11 15:10:46 -Generating unique operation named: listUsingGET_13
+2019-07-11 15:10:46 -Generating unique operation named: removeUsingPOST_17
+2019-07-11 15:10:46 -Generating unique operation named: removeUsingPOST_18
+2019-07-11 15:10:46 -Generating unique operation named: updateUsingGET_6
+2019-07-11 15:10:46 -Generating unique operation named: updateUsingHEAD_6
+2019-07-11 15:10:46 -Generating unique operation named: updateUsingPOST_10
+2019-07-11 15:10:46 -Generating unique operation named: updateUsingPUT_6
+2019-07-11 15:10:46 -Generating unique operation named: updateUsingPATCH_6
+2019-07-11 15:10:46 -Generating unique operation named: updateUsingDELETE_6
+2019-07-11 15:10:46 -Generating unique operation named: updateUsingOPTIONS_6
+2019-07-11 15:10:46 -Generating unique operation named: updateUsingTRACE_6
+2019-07-11 15:10:46 -Generating unique operation named: listUsingGET_14
+2019-07-11 15:10:46 -Generating unique operation named: listUsingHEAD_1
+2019-07-11 15:10:46 -Generating unique operation named: listUsingPOST_1
+2019-07-11 15:10:46 -Generating unique operation named: listUsingPUT_1
+2019-07-11 15:10:46 -Generating unique operation named: listUsingPATCH_1
+2019-07-11 15:10:46 -Generating unique operation named: listUsingDELETE_1
+2019-07-11 15:10:46 -Generating unique operation named: listUsingOPTIONS_1
+2019-07-11 15:10:46 -Generating unique operation named: listUsingTRACE_1
+2019-07-11 15:10:46 -Generating unique operation named: listUsingGET_15
+2019-07-11 15:10:46 -Generating unique operation named: addUsingGET_11
+2019-07-11 15:10:46 -Generating unique operation named: batchRemoveUsingPOST_4
+2019-07-11 15:10:46 -Generating unique operation named: editUsingGET_12
+2019-07-11 15:10:46 -Generating unique operation named: listUsingGET_16
+2019-07-11 15:10:46 -Generating unique operation named: removeUsingPOST_19
+2019-07-11 15:10:47 -Generating unique operation named: saveUsingPOST_10
+2019-07-11 15:10:47 -Generating unique operation named: treeUsingGET_3
+2019-07-11 15:10:47 -Generating unique operation named: treeViewUsingGET_1
+2019-07-11 15:10:47 -Generating unique operation named: updateUsingPOST_11
+2019-07-11 15:10:47 -Starting Quartz Scheduler now
+2019-07-11 15:10:47 -Scheduler schedulerFactoryBean_$_NON_CLUSTERED started.
+2019-07-11 15:10:47 -Starting...
+2019-07-11 15:10:47 -BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2019-07-11 15:10:47 -Started.
+2019-07-11 15:10:47 -Starting ProtocolHandler ["http-nio-8889"]
+2019-07-11 15:10:47 -Using a shared selector for servlet write/read
+2019-07-11 15:10:47 -Tomcat started on port(s): 8889 (http) with context path ''
+2019-07-11 15:10:47 -Started BootdoApplication in 14.577 seconds (JVM running for 16.06)
+2019-07-11 15:10:47 -==>  Preparing: select `id`,`cron_expression`,`method_name`,`is_concurrent`,`description`,`update_by`,`bean_class`,`create_date`,`job_status`,`job_group`,`update_date`,`create_by`,`spring_bean`,`job_name` from sys_task order by id desc 
+2019-07-11 15:10:47 -==> Parameters: 
+2019-07-11 15:10:47 -<==      Total: 1
+2019-07-11 15:11:13 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-07-11 15:11:13 -FrameworkServlet 'dispatcherServlet': initialization started
+2019-07-11 15:11:13 -FrameworkServlet 'dispatcherServlet': initialization completed in 49 ms
+2019-07-11 15:11:13 -Enabling session validation scheduler...
+2019-07-11 15:11:13 -请求地址 : http://127.0.0.1:8889/
+2019-07-11 15:11:13 -HTTP METHOD : GET
+2019-07-11 15:11:13 -CLASS_METHOD : com.bootdo.system.controller.LoginController.welcome
+2019-07-11 15:11:13 -参数 : [{}]
+2019-07-11 15:11:13 -耗时 : 3
+2019-07-11 15:11:13 -返回值 : redirect:/blog
+2019-07-11 15:11:13 -请求地址 : http://127.0.0.1:8889/blog
+2019-07-11 15:11:13 -HTTP METHOD : GET
+2019-07-11 15:11:13 -CLASS_METHOD : com.bootdo.blog.controller.BlogController.blog
+2019-07-11 15:11:13 -参数 : []
+2019-07-11 15:11:13 -耗时 : 1
+2019-07-11 15:11:13 -返回值 : blog/index/main
+2019-07-11 15:11:14 -请求地址 : http://127.0.0.1:8889/blog/open/list
+2019-07-11 15:11:14 -HTTP METHOD : GET
+2019-07-11 15:11:14 -CLASS_METHOD : com.bootdo.blog.controller.BlogController.opentList
+2019-07-11 15:11:14 -参数 : [{type=article, limit=10, offset=0}]
+2019-07-11 15:11:14 -==>  Preparing: select `cid`,`title`,`slug`,`created`,`modified`,`type`,`tags`,`categories`,`hits`,`comments_num`,`allow_comment`,`allow_ping`,`allow_feed`,`status`,`author`,`gtm_create`,`gtm_modified` from blog_content WHERE type = ? order by cid desc limit 0, 10 
+2019-07-11 15:11:14 -==> Parameters: article(String)
+2019-07-11 15:11:14 -<==      Total: 10
+2019-07-11 15:11:14 -==>  Preparing: select count(*) from blog_content WHERE type = ? 
+2019-07-11 15:11:14 -==> Parameters: article(String)
+2019-07-11 15:11:14 -<==      Total: 1
+2019-07-11 15:11:14 -耗时 : 50
+2019-07-11 15:11:14 -返回值 : com.bootdo.common.utils.PageUtils@44f0b8fc
+2019-07-11 15:11:15 -请求地址 : http://127.0.0.1:8889/login
+2019-07-11 15:11:15 -HTTP METHOD : GET
+2019-07-11 15:11:15 -CLASS_METHOD : com.bootdo.system.controller.LoginController.login
+2019-07-11 15:11:15 -参数 : [{}]
+2019-07-11 15:11:15 -耗时 : 0
+2019-07-11 15:11:15 -返回值 : login
+2019-07-11 15:11:15 -请求地址 : http://127.0.0.1:8889/getVerify
+2019-07-11 15:11:15 -HTTP METHOD : GET
+2019-07-11 15:11:15 -CLASS_METHOD : com.bootdo.system.controller.LoginController.getVerify
+2019-07-11 15:11:15 -参数 : [org.apache.shiro.web.servlet.ShiroHttpServletRequest@3ba0820d, org.apache.shiro.web.servlet.ShiroHttpServletResponse@35677b09]
+2019-07-11 15:11:16 -3544
+2019-07-11 15:11:16 -耗时 : 429
+2019-07-11 15:11:16 -返回值 : null
+2019-07-11 15:11:20 -请求地址 : http://127.0.0.1:8889/login
+2019-07-11 15:11:20 -HTTP METHOD : POST
+2019-07-11 15:11:20 -CLASS_METHOD : com.bootdo.system.controller.LoginController.ajaxLogin
+2019-07-11 15:11:20 -参数 : [admin, 111111, 3544, org.apache.shiro.web.servlet.ShiroHttpServletRequest@43ba9b44]
+2019-07-11 15:11:20 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2019-07-11 15:11:20 -==> Parameters: admin(String)
+2019-07-11 15:11:20 -<==      Total: 1
+2019-07-11 15:11:20 -耗时 : 27
+2019-07-11 15:11:20 -返回值 : {msg=操作成功, code=0}
+2019-07-11 15:11:20 -More than one TaskExecutor bean found within the context, and none is named 'taskExecutor'. Mark one of them as primary or name it 'taskExecutor' (possibly as an alias) in order to use it for async processing: [clientInboundChannelExecutor, clientOutboundChannelExecutor, brokerChannelExecutor, messageBrokerTaskScheduler]
+2019-07-11 15:11:20 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2019-07-11 15:11:20 -==> Parameters: 1(Long), admin(String), 登录(String), 27(Integer), com.bootdo.system.controller.LoginController.ajaxLogin()(String), null, 127.0.0.1(String), 2019-07-11 15:11:20.436(Timestamp)
+2019-07-11 15:11:20 -<==    Updates: 1
+2019-07-11 15:11:20 -请求地址 : http://127.0.0.1:8889/index
+2019-07-11 15:11:20 -HTTP METHOD : GET
+2019-07-11 15:11:20 -CLASS_METHOD : com.bootdo.system.controller.LoginController.index
+2019-07-11 15:11:20 -参数 : [{}]
+2019-07-11 15:11:20 -==>  Preparing: select distinct m.menu_id , parent_id, name, url, perms,`type`,icon,order_num,gmt_create, gmt_modified from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id =ur.role_id where ur.user_id = ? and m.type in(0,1) order by m.order_num 
+2019-07-11 15:11:20 -==> Parameters: 1(Long)
+2019-07-11 15:11:20 -<==      Total: 29
+2019-07-11 15:11:20 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file where id = ? 
+2019-07-11 15:11:20 -==> Parameters: 138(Long)
+2019-07-11 15:11:20 -<==      Total: 1
+2019-07-11 15:11:20 -耗时 : 40
+2019-07-11 15:11:20 -返回值 : index_v1
+2019-07-11 15:11:20 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2019-07-11 15:11:20 -==> Parameters: 1(Long), admin(String), 请求访问主页(String), 40(Integer), com.bootdo.system.controller.LoginController.index()(String), null, 127.0.0.1(String), 2019-07-11 15:11:20.535(Timestamp)
+2019-07-11 15:11:20 -<==    Updates: 1
+2019-07-11 15:11:20 -请求地址 : http://127.0.0.1:8889/main
+2019-07-11 15:11:20 -HTTP METHOD : GET
+2019-07-11 15:11:20 -CLASS_METHOD : com.bootdo.system.controller.LoginController.main
+2019-07-11 15:11:20 -参数 : []
+2019-07-11 15:11:20 -耗时 : 1
+2019-07-11 15:11:20 -返回值 : main
+2019-07-11 15:11:20 -请求地址 : http://127.0.0.1:8889/oa/notify/message
+2019-07-11 15:11:20 -HTTP METHOD : GET
+2019-07-11 15:11:20 -CLASS_METHOD : com.bootdo.oa.controller.NotifyController.message
+2019-07-11 15:11:20 -参数 : []
+2019-07-11 15:11:20 -==>  Preparing: select DISTINCT n.id ,`type`,`title`,`content`,`files`,r.is_read,`status`,`create_by`,`create_date`,`update_by`,`update_date`,`remarks`,`del_flag` from oa_notify_record r right JOIN oa_notify n on r.notify_id = n.id WHERE r.is_read = ? and r.user_id = ? order by is_read ASC, update_date DESC limit ?, ? 
+2019-07-11 15:11:20 -==> Parameters: 0(String), 1(Long), 0(Integer), 3(Integer)
+2019-07-11 15:11:20 -<==      Total: 0
+2019-07-11 15:11:20 -==>  Preparing: select count(*) from oa_notify_record r right JOIN oa_notify n on r.notify_id = n.id where r.user_id =? and r.is_read = ? 
+2019-07-11 15:11:20 -==> Parameters: 1(Long), 0(String)
+2019-07-11 15:11:20 -<==      Total: 1
+2019-07-11 15:11:20 -耗时 : 18
+2019-07-11 15:11:20 -返回值 : com.bootdo.common.utils.PageUtils@701eed22
+2019-07-11 15:11:20 -请求地址 : http://127.0.0.1:8889/main
+2019-07-11 15:11:20 -HTTP METHOD : GET
+2019-07-11 15:11:20 -CLASS_METHOD : com.bootdo.system.controller.LoginController.main
+2019-07-11 15:11:20 -参数 : []
+2019-07-11 15:11:20 -耗时 : 0
+2019-07-11 15:11:20 -返回值 : main
+2019-07-11 15:11:24 -==>  Preparing: select distinct m.perms from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id where ur.user_id = ? 
+2019-07-11 15:11:24 -==> Parameters: 1(Long)
+2019-07-11 15:11:24 -<==      Total: 51
+2019-07-11 15:11:24 -请求地址 : http://127.0.0.1:8889/qrcode/qrcode
+2019-07-11 15:11:24 -HTTP METHOD : GET
+2019-07-11 15:11:24 -CLASS_METHOD : com.bootdo.qrcode.controller.QrcodeController.Qrcode
+2019-07-11 15:11:24 -参数 : []
+2019-07-11 15:11:24 -耗时 : 0
+2019-07-11 15:11:24 -返回值 : qrcode/qrcode/qrcode
+2019-07-11 15:11:24 -请求地址 : http://127.0.0.1:8889/qrcode/qrcode/list
+2019-07-11 15:11:24 -HTTP METHOD : GET
+2019-07-11 15:11:24 -CLASS_METHOD : com.bootdo.qrcode.controller.QrcodeController.list
+2019-07-11 15:11:24 -参数 : [{limit=10, offset=0}]
+2019-07-11 15:11:24 -==>  Preparing: select `Id`,`qqurl`,`wechaturl`,`alipayurl`,`resulturl` from qrcode order by Id desc limit ?, ? 
+2019-07-11 15:11:24 -==> Parameters: 0(Integer), 10(Integer)
+2019-07-11 15:11:24 -<==      Total: 1
+2019-07-11 15:11:24 -==>  Preparing: select count(*) from qrcode 
+2019-07-11 15:11:24 -==> Parameters: 
+2019-07-11 15:11:24 -<==      Total: 1
+2019-07-11 15:11:24 -耗时 : 13
+2019-07-11 15:11:24 -返回值 : com.bootdo.common.utils.PageUtils@4b7f7806
+2019-07-11 15:11:43 -WebSocketSession[1 current WS(1)-HttpStream(0)-HttpPoll(0), 1 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(1)-CONNECTED(1)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 8, active threads = 0, queued tasks = 0, completed tasks = 9], outboundChannelpool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 2, completed tasks = 5]
+2019-07-11 15:12:01 -请求地址 : http://127.0.0.1:8889/qrcode/qrcode/add
+2019-07-11 15:12:01 -HTTP METHOD : GET
+2019-07-11 15:12:01 -CLASS_METHOD : com.bootdo.qrcode.controller.QrcodeController.add
+2019-07-11 15:12:01 -参数 : []
+2019-07-11 15:12:01 -耗时 : 0
+2019-07-11 15:12:01 -返回值 : qrcode/qrcode/add
+2019-07-11 15:12:15 -请求地址 : http://127.0.0.1:8889/qrcode/qrcode/save
+2019-07-11 15:12:15 -HTTP METHOD : POST
+2019-07-11 15:12:15 -CLASS_METHOD : com.bootdo.qrcode.controller.QrcodeController.save
+2019-07-11 15:12:15 -参数 : [com.bootdo.qrcode.domain.QrcodeDO@6c758bd3]
+2019-07-11 15:12:15 -==>  Preparing: insert into qrcode ( `qqurl`, `wechaturl`, `alipayurl`, `resulturl` ) values ( ?, ?, ?, ? ) 
+2019-07-11 15:12:15 -==> Parameters: qq(String), wechat(String), alipay(String), result(String)
+2019-07-11 15:12:15 -<==    Updates: 1
+2019-07-11 15:12:15 -耗时 : 4
+2019-07-11 15:12:15 -返回值 : {msg=操作成功, code=0}
+2019-07-11 15:12:15 -请求地址 : http://127.0.0.1:8889/qrcode/qrcode/list
+2019-07-11 15:12:15 -HTTP METHOD : GET
+2019-07-11 15:12:15 -CLASS_METHOD : com.bootdo.qrcode.controller.QrcodeController.list
+2019-07-11 15:12:15 -参数 : [{limit=10, offset=0}]
+2019-07-11 15:12:15 -==>  Preparing: select `Id`,`qqurl`,`wechaturl`,`alipayurl`,`resulturl` from qrcode order by Id desc limit ?, ? 
+2019-07-11 15:12:15 -==> Parameters: 0(Integer), 10(Integer)
+2019-07-11 15:12:15 -<==      Total: 2
+2019-07-11 15:12:15 -==>  Preparing: select count(*) from qrcode 
+2019-07-11 15:12:15 -==> Parameters: 
+2019-07-11 15:12:15 -<==      Total: 1
+2019-07-11 15:12:15 -耗时 : 7
+2019-07-11 15:12:15 -返回值 : com.bootdo.common.utils.PageUtils@88459e2
+2019-07-11 15:12:17 -请求地址 : http://127.0.0.1:8889/qrcode/qrcode/edit/2
+2019-07-11 15:12:17 -HTTP METHOD : GET
+2019-07-11 15:12:17 -CLASS_METHOD : com.bootdo.qrcode.controller.QrcodeController.edit
+2019-07-11 15:12:17 -参数 : [2, {}]
+2019-07-11 15:12:17 -==>  Preparing: select `Id`,`qqurl`,`wechaturl`,`alipayurl`,`resulturl` from qrcode where Id = ? 
+2019-07-11 15:12:17 -==> Parameters: 2(Integer)
+2019-07-11 15:12:17 -<==      Total: 1
+2019-07-11 15:12:17 -耗时 : 4
+2019-07-11 15:12:17 -返回值 : qrcode/qrcode/edit
+2019-07-11 15:12:20 -请求地址 : http://127.0.0.1:8889/qrcode/qrcode/edit/2
+2019-07-11 15:12:20 -HTTP METHOD : GET
+2019-07-11 15:12:20 -CLASS_METHOD : com.bootdo.qrcode.controller.QrcodeController.edit
+2019-07-11 15:12:20 -参数 : [2, {}]
+2019-07-11 15:12:20 -==>  Preparing: select `Id`,`qqurl`,`wechaturl`,`alipayurl`,`resulturl` from qrcode where Id = ? 
+2019-07-11 15:12:20 -==> Parameters: 2(Integer)
+2019-07-11 15:12:20 -<==      Total: 1
+2019-07-11 15:12:20 -耗时 : 3
+2019-07-11 15:12:20 -返回值 : qrcode/qrcode/edit
+2019-07-11 15:12:24 -请求地址 : http://127.0.0.1:8889/qrcode/qrcode/update
+2019-07-11 15:12:24 -HTTP METHOD : POST
+2019-07-11 15:12:24 -CLASS_METHOD : com.bootdo.qrcode.controller.QrcodeController.update
+2019-07-11 15:12:24 -参数 : [com.bootdo.qrcode.domain.QrcodeDO@5729273d]
+2019-07-11 15:12:24 -==>  Preparing: update qrcode SET `qqurl` = ?, `wechaturl` = ?, `alipayurl` = ?, `resulturl` = ? where Id = ? 
+2019-07-11 15:12:24 -==> Parameters: qq(String), wechat(String), alipay(String), resulturl(String), 2(Integer)
+2019-07-11 15:12:24 -<==    Updates: 1
+2019-07-11 15:12:24 -耗时 : 11
+2019-07-11 15:12:24 -返回值 : {msg=操作成功, code=0}
+2019-07-11 15:12:24 -请求地址 : http://127.0.0.1:8889/qrcode/qrcode/list
+2019-07-11 15:12:24 -HTTP METHOD : GET
+2019-07-11 15:12:24 -CLASS_METHOD : com.bootdo.qrcode.controller.QrcodeController.list
+2019-07-11 15:12:24 -参数 : [{limit=10, offset=0}]
+2019-07-11 15:12:24 -==>  Preparing: select `Id`,`qqurl`,`wechaturl`,`alipayurl`,`resulturl` from qrcode order by Id desc limit ?, ? 
+2019-07-11 15:12:24 -==> Parameters: 0(Integer), 10(Integer)
+2019-07-11 15:12:24 -<==      Total: 2
+2019-07-11 15:12:24 -==>  Preparing: select count(*) from qrcode 
+2019-07-11 15:12:24 -==> Parameters: 
+2019-07-11 15:12:24 -<==      Total: 1
+2019-07-11 15:12:24 -耗时 : 5
+2019-07-11 15:12:24 -返回值 : com.bootdo.common.utils.PageUtils@44321554
+2019-07-11 15:32:26 -==>  Preparing: select distinct m.perms from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id where ur.user_id = ? 
+2019-07-11 15:32:26 -==> Parameters: 1(Long)
+2019-07-11 15:32:26 -<==      Total: 51
+2019-07-11 15:32:26 -请求地址 : http://127.0.0.1:8889/qrcode/qrcode/add
+2019-07-11 15:32:26 -HTTP METHOD : GET
+2019-07-11 15:32:26 -CLASS_METHOD : com.bootdo.qrcode.controller.QrcodeController.add
+2019-07-11 15:32:26 -参数 : []
+2019-07-11 15:32:26 -耗时 : 1
+2019-07-11 15:32:26 -返回值 : qrcode/qrcode/add
+2019-07-11 15:35:03 -请求地址 : http://127.0.0.1:8889/qrcode/qrcode/save
+2019-07-11 15:35:03 -HTTP METHOD : POST
+2019-07-11 15:35:03 -CLASS_METHOD : com.bootdo.qrcode.controller.QrcodeController.save
+2019-07-11 15:35:03 -参数 : [com.bootdo.qrcode.domain.QrcodeDO@5ed2bf27]
+2019-07-11 15:35:03 -==>  Preparing: insert into qrcode ( `qqurl`, `wechaturl`, `alipayurl`, `resulturl` ) values ( ?, ?, ?, ? ) 
+2019-07-11 15:35:03 -==> Parameters: 1(String), 1(String), 1(String), 1(String)
+2019-07-11 15:35:03 -<==    Updates: 1
+2019-07-11 15:35:03 -耗时 : 3
+2019-07-11 15:35:03 -返回值 : {msg=操作成功, code=0}
+2019-07-11 15:35:03 -请求地址 : http://127.0.0.1:8889/qrcode/qrcode/list
+2019-07-11 15:35:03 -HTTP METHOD : GET
+2019-07-11 15:35:03 -CLASS_METHOD : com.bootdo.qrcode.controller.QrcodeController.list
+2019-07-11 15:35:03 -参数 : [{limit=10, offset=0}]
+2019-07-11 15:35:03 -==>  Preparing: select `Id`,`qqurl`,`wechaturl`,`alipayurl`,`resulturl` from qrcode order by Id desc limit ?, ? 
+2019-07-11 15:35:03 -==> Parameters: 0(Integer), 10(Integer)
+2019-07-11 15:35:03 -<==      Total: 3
+2019-07-11 15:35:03 -==>  Preparing: select count(*) from qrcode 
+2019-07-11 15:35:03 -==> Parameters: 
+2019-07-11 15:35:03 -<==      Total: 1
+2019-07-11 15:35:03 -耗时 : 5
+2019-07-11 15:35:03 -返回值 : com.bootdo.common.utils.PageUtils@50b14ecb
+2019-07-11 15:41:43 -WebSocketSession[1 current WS(1)-HttpStream(0)-HttpPoll(0), 1 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(1)-CONNECTED(1)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 9], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 1], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 2, completed tasks = 438]
+2019-07-11 15:55:44 -==>  Preparing: select distinct m.perms from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id where ur.user_id = ? 
+2019-07-11 15:55:44 -==> Parameters: 1(Long)
+2019-07-11 15:55:44 -<==      Total: 51
+2019-07-11 15:55:44 -请求地址 : http://127.0.0.1:8889/qrcode/qrcode/add
+2019-07-11 15:55:44 -HTTP METHOD : GET
+2019-07-11 15:55:44 -CLASS_METHOD : com.bootdo.qrcode.controller.QrcodeController.add
+2019-07-11 15:55:44 -参数 : []
+2019-07-11 15:55:44 -耗时 : 0
+2019-07-11 15:55:44 -返回值 : qrcode/qrcode/add
+2019-07-11 16:02:12 -请求地址 : http://127.0.0.1:8889/login;JSESSIONID=d0499f15-c1a3-4471-ac42-9c82cb179376
+2019-07-11 16:02:12 -HTTP METHOD : GET
+2019-07-11 16:02:12 -CLASS_METHOD : com.bootdo.system.controller.LoginController.login
+2019-07-11 16:02:12 -参数 : [{}]
+2019-07-11 16:02:12 -耗时 : 0
+2019-07-11 16:02:12 -返回值 : login
+2019-07-11 16:02:27 -请求地址 : http://127.0.0.1:8889/index
+2019-07-11 16:02:27 -HTTP METHOD : GET
+2019-07-11 16:02:27 -CLASS_METHOD : com.bootdo.system.controller.LoginController.index
+2019-07-11 16:02:27 -参数 : [{}]
+2019-07-11 16:02:27 -==>  Preparing: select distinct m.menu_id , parent_id, name, url, perms,`type`,icon,order_num,gmt_create, gmt_modified from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id =ur.role_id where ur.user_id = ? and m.type in(0,1) order by m.order_num 
+2019-07-11 16:02:27 -==> Parameters: 1(Long)
+2019-07-11 16:02:27 -<==      Total: 29
+2019-07-11 16:02:27 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file where id = ? 
+2019-07-11 16:02:27 -==> Parameters: 138(Long)
+2019-07-11 16:02:27 -<==      Total: 1
+2019-07-11 16:02:27 -耗时 : 14
+2019-07-11 16:02:27 -返回值 : index_v1
+2019-07-11 16:02:27 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2019-07-11 16:02:27 -==> Parameters: 1(Long), admin(String), 请求访问主页(String), 14(Integer), com.bootdo.system.controller.LoginController.index()(String), null, 127.0.0.1(String), 2019-07-11 16:02:27.973(Timestamp)
+2019-07-11 16:02:27 -<==    Updates: 1
+2019-07-11 16:02:28 -请求地址 : http://127.0.0.1:8889/main
+2019-07-11 16:02:28 -HTTP METHOD : GET
+2019-07-11 16:02:28 -CLASS_METHOD : com.bootdo.system.controller.LoginController.main
+2019-07-11 16:02:28 -参数 : []
+2019-07-11 16:02:28 -耗时 : 0
+2019-07-11 16:02:28 -返回值 : main
+2019-07-11 16:02:28 -请求地址 : http://127.0.0.1:8889/oa/notify/message
+2019-07-11 16:02:28 -HTTP METHOD : GET
+2019-07-11 16:02:28 -CLASS_METHOD : com.bootdo.oa.controller.NotifyController.message
+2019-07-11 16:02:28 -参数 : []
+2019-07-11 16:02:28 -==>  Preparing: select DISTINCT n.id ,`type`,`title`,`content`,`files`,r.is_read,`status`,`create_by`,`create_date`,`update_by`,`update_date`,`remarks`,`del_flag` from oa_notify_record r right JOIN oa_notify n on r.notify_id = n.id WHERE r.is_read = ? and r.user_id = ? order by is_read ASC, update_date DESC limit ?, ? 
+2019-07-11 16:02:28 -==> Parameters: 0(String), 1(Long), 0(Integer), 3(Integer)
+2019-07-11 16:02:28 -<==      Total: 0
+2019-07-11 16:02:28 -==>  Preparing: select count(*) from oa_notify_record r right JOIN oa_notify n on r.notify_id = n.id where r.user_id =? and r.is_read = ? 
+2019-07-11 16:02:28 -==> Parameters: 1(Long), 0(String)
+2019-07-11 16:02:28 -<==      Total: 1
+2019-07-11 16:02:28 -耗时 : 5
+2019-07-11 16:02:28 -返回值 : com.bootdo.common.utils.PageUtils@12fb19d
+2019-07-11 16:02:28 -请求地址 : http://127.0.0.1:8889/main
+2019-07-11 16:02:28 -HTTP METHOD : GET
+2019-07-11 16:02:28 -CLASS_METHOD : com.bootdo.system.controller.LoginController.main
+2019-07-11 16:02:28 -参数 : []
+2019-07-11 16:02:28 -耗时 : 0
+2019-07-11 16:02:28 -返回值 : main
+2019-07-11 16:02:30 -请求地址 : http://127.0.0.1:8889/qrcode/qrcode
+2019-07-11 16:02:30 -HTTP METHOD : GET
+2019-07-11 16:02:30 -CLASS_METHOD : com.bootdo.qrcode.controller.QrcodeController.Qrcode
+2019-07-11 16:02:30 -参数 : []
+2019-07-11 16:02:30 -耗时 : 1
+2019-07-11 16:02:30 -返回值 : qrcode/qrcode/qrcode
+2019-07-11 16:02:31 -请求地址 : http://127.0.0.1:8889/qrcode/qrcode/list
+2019-07-11 16:02:31 -HTTP METHOD : GET
+2019-07-11 16:02:31 -CLASS_METHOD : com.bootdo.qrcode.controller.QrcodeController.list
+2019-07-11 16:02:31 -参数 : [{limit=10, offset=0}]
+2019-07-11 16:02:31 -==>  Preparing: select `Id`,`qqurl`,`wechaturl`,`alipayurl`,`resulturl` from qrcode order by Id desc limit ?, ? 
+2019-07-11 16:02:31 -==> Parameters: 0(Integer), 10(Integer)
+2019-07-11 16:02:31 -<==      Total: 3
+2019-07-11 16:02:31 -==>  Preparing: select count(*) from qrcode 
+2019-07-11 16:02:31 -==> Parameters: 
+2019-07-11 16:02:31 -<==      Total: 1
+2019-07-11 16:02:31 -耗时 : 6
+2019-07-11 16:02:31 -返回值 : com.bootdo.common.utils.PageUtils@50b9ab95
+2019-07-11 16:03:27 -请求地址 : http://127.0.0.1:8889/
+2019-07-11 16:03:27 -HTTP METHOD : GET
+2019-07-11 16:03:27 -CLASS_METHOD : com.bootdo.system.controller.LoginController.welcome
+2019-07-11 16:03:27 -参数 : [{}]
+2019-07-11 16:03:27 -耗时 : 0
+2019-07-11 16:03:27 -返回值 : redirect:/blog
+2019-07-11 16:03:27 -请求地址 : http://127.0.0.1:8889/blog
+2019-07-11 16:03:27 -HTTP METHOD : GET
+2019-07-11 16:03:27 -CLASS_METHOD : com.bootdo.blog.controller.BlogController.blog
+2019-07-11 16:03:27 -参数 : []
+2019-07-11 16:03:27 -耗时 : 0
+2019-07-11 16:03:27 -返回值 : blog/index/main
+2019-07-11 16:03:27 -请求地址 : http://127.0.0.1:8889/blog/open/list
+2019-07-11 16:03:27 -HTTP METHOD : GET
+2019-07-11 16:03:27 -CLASS_METHOD : com.bootdo.blog.controller.BlogController.opentList
+2019-07-11 16:03:27 -参数 : [{type=article, limit=10, offset=0}]
+2019-07-11 16:03:27 -==>  Preparing: select `cid`,`title`,`slug`,`created`,`modified`,`type`,`tags`,`categories`,`hits`,`comments_num`,`allow_comment`,`allow_ping`,`allow_feed`,`status`,`author`,`gtm_create`,`gtm_modified` from blog_content WHERE type = ? order by cid desc limit 0, 10 
+2019-07-11 16:03:27 -==> Parameters: article(String)
+2019-07-11 16:03:27 -<==      Total: 10
+2019-07-11 16:03:27 -==>  Preparing: select count(*) from blog_content WHERE type = ? 
+2019-07-11 16:03:27 -==> Parameters: article(String)
+2019-07-11 16:03:27 -<==      Total: 1
+2019-07-11 16:03:27 -耗时 : 13
+2019-07-11 16:03:27 -返回值 : com.bootdo.common.utils.PageUtils@5075e204
+2019-07-11 16:03:28 -请求地址 : http://127.0.0.1:8889/login
+2019-07-11 16:03:28 -HTTP METHOD : GET
+2019-07-11 16:03:28 -CLASS_METHOD : com.bootdo.system.controller.LoginController.login
+2019-07-11 16:03:28 -参数 : [{}]
+2019-07-11 16:03:28 -耗时 : 0
+2019-07-11 16:03:28 -返回值 : login
+2019-07-11 16:03:28 -请求地址 : http://127.0.0.1:8889/getVerify
+2019-07-11 16:03:28 -HTTP METHOD : GET
+2019-07-11 16:03:28 -CLASS_METHOD : com.bootdo.system.controller.LoginController.getVerify
+2019-07-11 16:03:28 -参数 : [org.apache.shiro.web.servlet.ShiroHttpServletRequest@14fee635, org.apache.shiro.web.servlet.ShiroHttpServletResponse@3a962956]
+2019-07-11 16:03:28 -4575
+2019-07-11 16:03:28 -耗时 : 40
+2019-07-11 16:03:28 -返回值 : null
+2019-07-11 16:03:33 -请求地址 : http://127.0.0.1:8889/login
+2019-07-11 16:03:33 -HTTP METHOD : POST
+2019-07-11 16:03:33 -CLASS_METHOD : com.bootdo.system.controller.LoginController.ajaxLogin
+2019-07-11 16:03:33 -参数 : [admin, 111111, 4575, org.apache.shiro.web.servlet.ShiroHttpServletRequest@6d8ad675]
+2019-07-11 16:03:33 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2019-07-11 16:03:33 -==> Parameters: admin(String)
+2019-07-11 16:03:33 -<==      Total: 1
+2019-07-11 16:03:33 -耗时 : 6
+2019-07-11 16:03:33 -返回值 : {msg=操作成功, code=0}
+2019-07-11 16:03:33 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2019-07-11 16:03:33 -==> Parameters: 1(Long), admin(String), 登录(String), 6(Integer), com.bootdo.system.controller.LoginController.ajaxLogin()(String), null, 127.0.0.1(String), 2019-07-11 16:03:33.738(Timestamp)
+2019-07-11 16:03:33 -<==    Updates: 1
+2019-07-11 16:03:33 -请求地址 : http://127.0.0.1:8889/index
+2019-07-11 16:03:33 -HTTP METHOD : GET
+2019-07-11 16:03:33 -CLASS_METHOD : com.bootdo.system.controller.LoginController.index
+2019-07-11 16:03:33 -参数 : [{}]
+2019-07-11 16:03:33 -==>  Preparing: select distinct m.menu_id , parent_id, name, url, perms,`type`,icon,order_num,gmt_create, gmt_modified from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id =ur.role_id where ur.user_id = ? and m.type in(0,1) order by m.order_num 
+2019-07-11 16:03:33 -==> Parameters: 1(Long)
+2019-07-11 16:03:33 -<==      Total: 29
+2019-07-11 16:03:33 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file where id = ? 
+2019-07-11 16:03:33 -==> Parameters: 138(Long)
+2019-07-11 16:03:33 -<==      Total: 1
+2019-07-11 16:03:33 -耗时 : 12
+2019-07-11 16:03:33 -返回值 : index_v1
+2019-07-11 16:03:33 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2019-07-11 16:03:33 -==> Parameters: 1(Long), admin(String), 请求访问主页(String), 12(Integer), com.bootdo.system.controller.LoginController.index()(String), null, 127.0.0.1(String), 2019-07-11 16:03:33.767(Timestamp)
+2019-07-11 16:03:33 -<==    Updates: 1
+2019-07-11 16:03:33 -请求地址 : http://127.0.0.1:8889/main
+2019-07-11 16:03:33 -HTTP METHOD : GET
+2019-07-11 16:03:33 -CLASS_METHOD : com.bootdo.system.controller.LoginController.main
+2019-07-11 16:03:33 -参数 : []
+2019-07-11 16:03:33 -耗时 : 1
+2019-07-11 16:03:33 -返回值 : main
+2019-07-11 16:03:33 -请求地址 : http://127.0.0.1:8889/oa/notify/message
+2019-07-11 16:03:33 -HTTP METHOD : GET
+2019-07-11 16:03:33 -CLASS_METHOD : com.bootdo.oa.controller.NotifyController.message
+2019-07-11 16:03:33 -参数 : []
+2019-07-11 16:03:33 -==>  Preparing: select DISTINCT n.id ,`type`,`title`,`content`,`files`,r.is_read,`status`,`create_by`,`create_date`,`update_by`,`update_date`,`remarks`,`del_flag` from oa_notify_record r right JOIN oa_notify n on r.notify_id = n.id WHERE r.is_read = ? and r.user_id = ? order by is_read ASC, update_date DESC limit ?, ? 
+2019-07-11 16:03:33 -==> Parameters: 0(String), 1(Long), 0(Integer), 3(Integer)
+2019-07-11 16:03:33 -<==      Total: 0
+2019-07-11 16:03:33 -==>  Preparing: select count(*) from oa_notify_record r right JOIN oa_notify n on r.notify_id = n.id where r.user_id =? and r.is_read = ? 
+2019-07-11 16:03:33 -==> Parameters: 1(Long), 0(String)
+2019-07-11 16:03:33 -<==      Total: 1
+2019-07-11 16:03:33 -耗时 : 5
+2019-07-11 16:03:33 -返回值 : com.bootdo.common.utils.PageUtils@1bb67ab7
+2019-07-11 16:03:33 -请求地址 : http://127.0.0.1:8889/main
+2019-07-11 16:03:33 -HTTP METHOD : GET
+2019-07-11 16:03:33 -CLASS_METHOD : com.bootdo.system.controller.LoginController.main
+2019-07-11 16:03:33 -参数 : []
+2019-07-11 16:03:33 -耗时 : 0
+2019-07-11 16:03:33 -返回值 : main
+2019-07-11 16:03:37 -==>  Preparing: select distinct m.perms from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id where ur.user_id = ? 
+2019-07-11 16:03:37 -==> Parameters: 1(Long)
+2019-07-11 16:03:37 -<==      Total: 51
+2019-07-11 16:03:37 -请求地址 : http://127.0.0.1:8889/qrcode/qrcode
+2019-07-11 16:03:37 -HTTP METHOD : GET
+2019-07-11 16:03:37 -CLASS_METHOD : com.bootdo.qrcode.controller.QrcodeController.Qrcode
+2019-07-11 16:03:37 -参数 : []
+2019-07-11 16:03:37 -耗时 : 0
+2019-07-11 16:03:37 -返回值 : qrcode/qrcode/qrcode
+2019-07-11 16:03:38 -请求地址 : http://127.0.0.1:8889/qrcode/qrcode/list
+2019-07-11 16:03:38 -HTTP METHOD : GET
+2019-07-11 16:03:38 -CLASS_METHOD : com.bootdo.qrcode.controller.QrcodeController.list
+2019-07-11 16:03:38 -参数 : [{limit=10, offset=0}]
+2019-07-11 16:03:38 -==>  Preparing: select `Id`,`qqurl`,`wechaturl`,`alipayurl`,`resulturl` from qrcode order by Id desc limit ?, ? 
+2019-07-11 16:03:38 -==> Parameters: 0(Integer), 10(Integer)
+2019-07-11 16:03:38 -<==      Total: 3
+2019-07-11 16:03:38 -==>  Preparing: select count(*) from qrcode 
+2019-07-11 16:03:38 -==> Parameters: 
+2019-07-11 16:03:38 -<==      Total: 1
+2019-07-11 16:03:38 -耗时 : 7
+2019-07-11 16:03:38 -返回值 : com.bootdo.common.utils.PageUtils@540cc36b
+2019-07-11 16:11:13 -Validating all active sessions...
+2019-07-11 16:11:13 -Finished session validation.  No sessions were stopped.
+2019-07-11 16:11:43 -WebSocketSession[1 current WS(1)-HttpStream(0)-HttpPoll(0), 3 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(3)-CONNECTED(3)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 33], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 5], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 2, completed tasks = 870]
+2019-07-11 16:24:28 -请求地址 : http://127.0.0.1:8889/login;JSESSIONID=5144e357-836a-462b-8d71-f58d9c3589da
+2019-07-11 16:24:28 -HTTP METHOD : GET
+2019-07-11 16:24:28 -CLASS_METHOD : com.bootdo.system.controller.LoginController.login
+2019-07-11 16:24:28 -参数 : [{}]
+2019-07-11 16:24:28 -耗时 : 1
+2019-07-11 16:24:28 -返回值 : login
+2019-07-11 16:28:05 -==>  Preparing: select distinct m.perms from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id where ur.user_id = ? 
+2019-07-11 16:28:05 -==> Parameters: 1(Long)
+2019-07-11 16:28:05 -<==      Total: 51
+2019-07-11 16:28:05 -请求地址 : http://127.0.0.1:8889/sys/role
+2019-07-11 16:28:05 -HTTP METHOD : GET
+2019-07-11 16:28:05 -CLASS_METHOD : com.bootdo.system.controller.RoleController.role
+2019-07-11 16:28:05 -参数 : []
+2019-07-11 16:28:05 -耗时 : 0
+2019-07-11 16:28:05 -返回值 : system/role/role
+2019-07-11 16:28:05 -请求地址 : http://127.0.0.1:8889/sys/role/list
+2019-07-11 16:28:05 -HTTP METHOD : GET
+2019-07-11 16:28:05 -CLASS_METHOD : com.bootdo.system.controller.RoleController.list
+2019-07-11 16:28:05 -参数 : []
+2019-07-11 16:28:05 -==>  Preparing: select `role_id`,`role_name`,`role_sign`,`remark`,`user_id_create`,`gmt_create`,`gmt_modified` from sys_role order by role_id desc 
+2019-07-11 16:28:05 -==> Parameters: 
+2019-07-11 16:28:05 -<==      Total: 2
+2019-07-11 16:28:05 -耗时 : 14
+2019-07-11 16:28:05 -返回值 : [RoleDO{roleId=59, roleName='普通用户', roleSign='null', remark='基本用户权限', userIdCreate=null, gmtCreate=null, gmtModified=null, menuIds=null}, RoleDO{roleId=1, roleName='超级用户角色', roleSign='admin', remark='拥有最高权限', userIdCreate=2, gmtCreate=2017-08-12 00:43:52.0, gmtModified=2017-08-12 19:14:59.0, menuIds=null}]
+2019-07-11 16:28:07 -请求地址 : http://127.0.0.1:8889/sys/user/
+2019-07-11 16:28:07 -HTTP METHOD : GET
+2019-07-11 16:28:07 -CLASS_METHOD : com.bootdo.system.controller.UserController.user
+2019-07-11 16:28:07 -参数 : [{}]
+2019-07-11 16:28:07 -耗时 : 0
+2019-07-11 16:28:07 -返回值 : system/user/user
+2019-07-11 16:28:07 -请求地址 : http://127.0.0.1:8889/system/sysDept/tree
+2019-07-11 16:28:07 -HTTP METHOD : GET
+2019-07-11 16:28:07 -CLASS_METHOD : com.bootdo.system.controller.DeptController.tree
+2019-07-11 16:28:07 -参数 : []
+2019-07-11 16:28:07 -==>  Preparing: select `dept_id`,`parent_id`,`name`,`order_num`,`del_flag` from sys_dept order by dept_id desc 
+2019-07-11 16:28:07 -==> Parameters: 
+2019-07-11 16:28:07 -<==      Total: 10
+2019-07-11 16:28:07 -耗时 : 10
+2019-07-11 16:28:07 -返回值 : {"checked":true,"children":[{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"15","parentId":"13","state":{"opened":true},"text":"测试二部"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"14","parentId":"13","state":{"opened":true},"text":"测试一部"}],"hasChildren":true,"hasParent":false,"id":"13","parentId":"0","state":{"opened":true},"text":"测试部"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"12","parentId":"11","state":{"opened":true},"text":"产品一部"}],"hasChildren":true,"hasParent":false,"id":"11","parentId":"0","state":{"opened":true},"text":"产品部"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"10","parentId":"9","state":{"opened":true},"text":"销售一部"}],"hasChildren":true,"hasParent":false,"id":"9","parentId":"0","state":{"opened":true},"text":"销售部"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"8","parentId":"6","state":{"opened":true},"text":"研发二部"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"7","parentId":"6","state":{"opened":true},"text":"研發一部"}],"hasChildren":true,"hasParent":false,"id":"6","parentId":"0","state":{"opened":true},"text":"研发部"}],"hasChildren":true,"hasParent":false,"id":"-1","parentId":"","state":{"opened":true},"text":"顶级节点"}
+2019-07-11 16:28:07 -请求地址 : http://127.0.0.1:8889/sys/user/list
+2019-07-11 16:28:07 -HTTP METHOD : GET
+2019-07-11 16:28:07 -CLASS_METHOD : com.bootdo.system.controller.UserController.list
+2019-07-11 16:28:07 -参数 : [{limit=10, offset=0, name=, deptId=}]
+2019-07-11 16:28:07 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user order by user_id desc limit ?, ? 
+2019-07-11 16:28:07 -==> Parameters: 0(Integer), 10(Integer)
+2019-07-11 16:28:07 -<==      Total: 10
+2019-07-11 16:28:07 -==>  Preparing: select count(*) from sys_user 
+2019-07-11 16:28:07 -==> Parameters: 
+2019-07-11 16:28:07 -<==      Total: 1
+2019-07-11 16:28:07 -耗时 : 45
+2019-07-11 16:28:07 -返回值 : com.bootdo.common.utils.PageUtils@33fbba7d
+2019-07-11 16:28:10 -请求地址 : http://127.0.0.1:8889/sys/user/add
+2019-07-11 16:28:10 -HTTP METHOD : GET
+2019-07-11 16:28:10 -CLASS_METHOD : com.bootdo.system.controller.UserController.add
+2019-07-11 16:28:10 -参数 : [{}]
+2019-07-11 16:28:10 -==>  Preparing: select `role_id`,`role_name`,`role_sign`,`remark`,`user_id_create`,`gmt_create`,`gmt_modified` from sys_role order by role_id desc 
+2019-07-11 16:28:10 -==> Parameters: 
+2019-07-11 16:28:10 -<==      Total: 2
+2019-07-11 16:28:10 -耗时 : 3
+2019-07-11 16:28:10 -返回值 : system/user/add
+2019-07-11 16:28:10 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2019-07-11 16:28:10 -==> Parameters: 1(Long), admin(String), 添加用户(String), 3(Integer), com.bootdo.system.controller.UserController.add()(String), null, 127.0.0.1(String), 2019-07-11 16:28:10.793(Timestamp)
+2019-07-11 16:28:10 -<==    Updates: 1
+2019-07-11 16:28:20 -请求地址 : http://127.0.0.1:8889/sys/user/exit
+2019-07-11 16:28:20 -HTTP METHOD : POST
+2019-07-11 16:28:20 -CLASS_METHOD : com.bootdo.system.controller.UserController.exit
+2019-07-11 16:28:20 -参数 : [{username=爱丽丝}]
+2019-07-11 16:28:20 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2019-07-11 16:28:20 -==> Parameters: 爱丽丝(String)
+2019-07-11 16:28:20 -<==      Total: 0
+2019-07-11 16:28:20 -耗时 : 18
+2019-07-11 16:28:20 -返回值 : true
+2019-07-11 16:28:53 -请求地址 : http://127.0.0.1:8889/sys/user/save
+2019-07-11 16:28:53 -HTTP METHOD : POST
+2019-07-11 16:28:53 -CLASS_METHOD : com.bootdo.system.controller.UserController.save
+2019-07-11 16:28:53 -参数 : [UserDO{userId=null, username='爱丽丝', name='爱丽丝', password='124455', deptId=null, deptName='', email='1992lcg@163.com', mobile='null', status=1, userIdCreate=null, gmtCreate=null, gmtModified=null, roleIds=[59], sex=null, birth=null, picId=null, liveAddress='null', hobby='null', province='null', city='null', district='null'}]
+2019-07-11 16:28:53 -==>  Preparing: insert into sys_user ( `username`, `name`, `password`, `dept_id`, `email`, `mobile`, `status`, `user_id_create`, `gmt_create`, `gmt_modified`, `sex`, `birth`, `pic_id`, `live_address`, `hobby`, `province`, `city`, `district` ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2019-07-11 16:28:53 -==> Parameters: 爱丽丝(String), 爱丽丝(String), 2059fc5f64c28cb18d591ddb184d2ea9(String), null, 1992lcg@163.com(String), null, 1(Integer), null, null, null, null, null, null, null, null, null, null, null
+2019-07-11 16:28:53 -<==    Updates: 1
+2019-07-11 16:28:53 -==>  Preparing: delete from sys_user_role where user_id=? 
+2019-07-11 16:28:53 -==> Parameters: 137(Long)
+2019-07-11 16:28:53 -<==    Updates: 0
+2019-07-11 16:28:53 -==>  Preparing: INSERT INTO sys_user_role(user_id, role_id) values (?,?) 
+2019-07-11 16:28:53 -==> Parameters: 137(Long), 59(Long)
+2019-07-11 16:28:53 -<==    Updates: 1
+2019-07-11 16:28:53 -耗时 : 18
+2019-07-11 16:28:53 -返回值 : {msg=操作成功, code=0}
+2019-07-11 16:28:53 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2019-07-11 16:28:53 -==> Parameters: 1(Long), admin(String), 保存用户(String), 18(Integer), com.bootdo.system.controller.UserController.save()(String), null, 127.0.0.1(String), 2019-07-11 16:28:53.264(Timestamp)
+2019-07-11 16:28:53 -<==    Updates: 1
+2019-07-11 16:28:53 -请求地址 : http://127.0.0.1:8889/sys/user/list
+2019-07-11 16:28:53 -HTTP METHOD : GET
+2019-07-11 16:28:53 -CLASS_METHOD : com.bootdo.system.controller.UserController.list
+2019-07-11 16:28:53 -参数 : [{limit=10, offset=0, name=, deptId=}]
+2019-07-11 16:28:53 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user order by user_id desc limit ?, ? 
+2019-07-11 16:28:53 -==> Parameters: 0(Integer), 10(Integer)
+2019-07-11 16:28:53 -<==      Total: 10
+2019-07-11 16:28:53 -==>  Preparing: select count(*) from sys_user 
+2019-07-11 16:28:53 -==> Parameters: 
+2019-07-11 16:28:53 -<==      Total: 1
+2019-07-11 16:28:53 -耗时 : 9
+2019-07-11 16:28:53 -返回值 : com.bootdo.common.utils.PageUtils@40d60c97
+2019-07-11 16:38:10 -请求地址 : http://127.0.0.1:8889/login;JSESSIONID=a4108024-be97-4b31-8fb7-d3ce0257fc21
+2019-07-11 16:38:10 -HTTP METHOD : GET
+2019-07-11 16:38:10 -CLASS_METHOD : com.bootdo.system.controller.LoginController.login
+2019-07-11 16:38:10 -参数 : [{}]
+2019-07-11 16:38:10 -耗时 : 0
+2019-07-11 16:38:10 -返回值 : login
+2019-07-11 16:38:18 -请求地址 : http://127.0.0.1:8889/index
+2019-07-11 16:38:18 -HTTP METHOD : GET
+2019-07-11 16:38:18 -CLASS_METHOD : com.bootdo.system.controller.LoginController.index
+2019-07-11 16:38:18 -参数 : [{}]
+2019-07-11 16:38:18 -==>  Preparing: select distinct m.menu_id , parent_id, name, url, perms,`type`,icon,order_num,gmt_create, gmt_modified from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id =ur.role_id where ur.user_id = ? and m.type in(0,1) order by m.order_num 
+2019-07-11 16:38:18 -==> Parameters: 1(Long)
+2019-07-11 16:38:18 -<==      Total: 29
+2019-07-11 16:38:18 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file where id = ? 
+2019-07-11 16:38:18 -==> Parameters: 138(Long)
+2019-07-11 16:38:18 -<==      Total: 1
+2019-07-11 16:38:18 -耗时 : 14
+2019-07-11 16:38:18 -返回值 : index_v1
+2019-07-11 16:38:18 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2019-07-11 16:38:18 -==> Parameters: 1(Long), admin(String), 请求访问主页(String), 15(Integer), com.bootdo.system.controller.LoginController.index()(String), null, 127.0.0.1(String), 2019-07-11 16:38:18.873(Timestamp)
+2019-07-11 16:38:18 -<==    Updates: 1
+2019-07-11 16:38:18 -请求地址 : http://127.0.0.1:8889/main
+2019-07-11 16:38:18 -HTTP METHOD : GET
+2019-07-11 16:38:18 -CLASS_METHOD : com.bootdo.system.controller.LoginController.main
+2019-07-11 16:38:18 -参数 : []
+2019-07-11 16:38:18 -耗时 : 0
+2019-07-11 16:38:18 -返回值 : main
+2019-07-11 16:38:18 -请求地址 : http://127.0.0.1:8889/oa/notify/message
+2019-07-11 16:38:18 -HTTP METHOD : GET
+2019-07-11 16:38:18 -CLASS_METHOD : com.bootdo.oa.controller.NotifyController.message
+2019-07-11 16:38:18 -参数 : []
+2019-07-11 16:38:18 -==>  Preparing: select DISTINCT n.id ,`type`,`title`,`content`,`files`,r.is_read,`status`,`create_by`,`create_date`,`update_by`,`update_date`,`remarks`,`del_flag` from oa_notify_record r right JOIN oa_notify n on r.notify_id = n.id WHERE r.is_read = ? and r.user_id = ? order by is_read ASC, update_date DESC limit ?, ? 
+2019-07-11 16:38:18 -==> Parameters: 0(String), 1(Long), 0(Integer), 3(Integer)
+2019-07-11 16:38:18 -<==      Total: 0
+2019-07-11 16:38:18 -==>  Preparing: select count(*) from oa_notify_record r right JOIN oa_notify n on r.notify_id = n.id where r.user_id =? and r.is_read = ? 
+2019-07-11 16:38:19 -==> Parameters: 1(Long), 0(String)
+2019-07-11 16:38:19 -<==      Total: 1
+2019-07-11 16:38:19 -耗时 : 6
+2019-07-11 16:38:19 -返回值 : com.bootdo.common.utils.PageUtils@517d2b98
+2019-07-11 16:38:19 -请求地址 : http://127.0.0.1:8889/main
+2019-07-11 16:38:19 -HTTP METHOD : GET
+2019-07-11 16:38:19 -CLASS_METHOD : com.bootdo.system.controller.LoginController.main
+2019-07-11 16:38:19 -参数 : []
+2019-07-11 16:38:19 -耗时 : 1
+2019-07-11 16:38:19 -返回值 : main
+2019-07-11 16:38:22 -==>  Preparing: select distinct m.perms from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id where ur.user_id = ? 
+2019-07-11 16:38:22 -==> Parameters: 1(Long)
+2019-07-11 16:38:22 -<==      Total: 51
+2019-07-11 16:38:22 -请求地址 : http://127.0.0.1:8889/qrcode/qrcode
+2019-07-11 16:38:22 -HTTP METHOD : GET
+2019-07-11 16:38:22 -CLASS_METHOD : com.bootdo.qrcode.controller.QrcodeController.Qrcode
+2019-07-11 16:38:22 -参数 : []
+2019-07-11 16:38:22 -耗时 : 1
+2019-07-11 16:38:22 -返回值 : qrcode/qrcode/qrcode
+2019-07-11 16:38:22 -请求地址 : http://127.0.0.1:8889/qrcode/qrcode/list
+2019-07-11 16:38:22 -HTTP METHOD : GET
+2019-07-11 16:38:22 -CLASS_METHOD : com.bootdo.qrcode.controller.QrcodeController.list
+2019-07-11 16:38:22 -参数 : [{limit=10, offset=0}]
+2019-07-11 16:38:22 -==>  Preparing: select `Id`,`qqurl`,`wechaturl`,`alipayurl`,`resulturl` from qrcode order by Id desc limit ?, ? 
+2019-07-11 16:38:22 -==> Parameters: 0(Integer), 10(Integer)
+2019-07-11 16:38:22 -<==      Total: 3
+2019-07-11 16:38:22 -==>  Preparing: select count(*) from qrcode 
+2019-07-11 16:38:22 -==> Parameters: 
+2019-07-11 16:38:22 -<==      Total: 1
+2019-07-11 16:38:22 -耗时 : 6
+2019-07-11 16:38:22 -返回值 : com.bootdo.common.utils.PageUtils@d0e2388
+2019-07-11 16:38:33 -请求地址 : http://127.0.0.1:8889/login;JSESSIONID=bf49be1f-f81f-434b-a051-79d4a48749af
+2019-07-11 16:38:33 -HTTP METHOD : GET
+2019-07-11 16:38:33 -CLASS_METHOD : com.bootdo.system.controller.LoginController.login
+2019-07-11 16:38:33 -参数 : [{}]
+2019-07-11 16:38:33 -耗时 : 0
+2019-07-11 16:38:33 -返回值 : login
+2019-07-11 16:41:22 -请求地址 : http://127.0.0.1:8889/sys/role
+2019-07-11 16:41:22 -HTTP METHOD : GET
+2019-07-11 16:41:22 -CLASS_METHOD : com.bootdo.system.controller.RoleController.role
+2019-07-11 16:41:22 -参数 : []
+2019-07-11 16:41:22 -耗时 : 0
+2019-07-11 16:41:22 -返回值 : system/role/role
+2019-07-11 16:41:22 -请求地址 : http://127.0.0.1:8889/sys/role/list
+2019-07-11 16:41:22 -HTTP METHOD : GET
+2019-07-11 16:41:22 -CLASS_METHOD : com.bootdo.system.controller.RoleController.list
+2019-07-11 16:41:22 -参数 : []
+2019-07-11 16:41:22 -==>  Preparing: select `role_id`,`role_name`,`role_sign`,`remark`,`user_id_create`,`gmt_create`,`gmt_modified` from sys_role order by role_id desc 
+2019-07-11 16:41:22 -==> Parameters: 
+2019-07-11 16:41:22 -<==      Total: 2
+2019-07-11 16:41:22 -耗时 : 4
+2019-07-11 16:41:22 -返回值 : [RoleDO{roleId=59, roleName='普通用户', roleSign='null', remark='基本用户权限', userIdCreate=null, gmtCreate=null, gmtModified=null, menuIds=null}, RoleDO{roleId=1, roleName='超级用户角色', roleSign='admin', remark='拥有最高权限', userIdCreate=2, gmtCreate=2017-08-12 00:43:52.0, gmtModified=2017-08-12 19:14:59.0, menuIds=null}]
+2019-07-11 16:41:23 -请求地址 : http://127.0.0.1:8889/sys/menu/
+2019-07-11 16:41:23 -HTTP METHOD : GET
+2019-07-11 16:41:23 -CLASS_METHOD : com.bootdo.system.controller.MenuController.menu
+2019-07-11 16:41:23 -参数 : [{}]
+2019-07-11 16:41:23 -耗时 : 0
+2019-07-11 16:41:23 -返回值 : system/menu/menu
+2019-07-11 16:41:23 -请求地址 : http://127.0.0.1:8889/sys/menu/list
+2019-07-11 16:41:23 -HTTP METHOD : GET
+2019-07-11 16:41:23 -CLASS_METHOD : com.bootdo.system.controller.MenuController.list
+2019-07-11 16:41:23 -参数 : [{sort=order_num}]
+2019-07-11 16:41:23 -==>  Preparing: select `menu_id`,`parent_id`,`name`,`url`,`perms`,`type`,`icon`,`order_num`,`gmt_create`,`gmt_modified` from sys_menu order by order_num 
+2019-07-11 16:41:23 -==> Parameters: 
+2019-07-11 16:41:23 -<==      Total: 66
+2019-07-11 16:41:23 -耗时 : 18
+2019-07-11 16:41:23 -返回值 : [MenuDO{menuId=51, parentId=50, name='新增', url='', perms='blog:bContent:add', type=2, icon='', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=55, parentId=7, name='编辑', url='', perms='sys:role:edit', type=2, icon='', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=56, parentId=7, name='删除', url='', perms='sys:role:remove', type=2, icon='null', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=58, parentId=50, name='编辑', url='', perms='blog:bContent:edit', type=2, icon='null', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=59, parentId=50, name='删除', url='', perms='blog:bContent:remove', type=2, icon='null', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=60, parentId=50, name='批量删除', url='', perms='blog:bContent:batchRemove', type=2, icon='null', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=61, parentId=2, name='批量删除', url='', perms='sys:menu:batchRemove', type=2, icon='null', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=62, parentId=7, name='批量删除', url='', perms='sys:role:batchRemove', type=2, icon='null', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=85, parentId=84, name='通知公告', url='oa/notify', perms='oa:notify:notify', type=1, icon='fa fa-pencil-square', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=88, parentId=85, name='删除', url='oa/notify/remove', perms='oa:notify:remove', type=2, icon='fa fa-minus', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=89, parentId=85, name='批量删除', url='oa/notify/batchRemove', perms='oa:notify:batchRemove', type=2, icon='', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=90, parentId=84, name='我的通知', url='oa/notify/selfNotify', perms='', type=1, icon='fa fa-envelope-square', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=92, parentId=91, name='在线用户', url='sys/online', perms='', type=1, icon='fa fa-user', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=94, parentId=93, name='模型管理', url='activiti/model', perms='', type=1, icon='fa fa-sort-amount-asc', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=95, parentId=94, name='全部权限', url='', perms='activiti:model', type=2, icon='', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=96, parentId=93, name='流程管理', url='activiti/process', perms='', type=1, icon='fa fa-flag', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=98, parentId=97, name='百度chart', url='/chart/graph_echarts.html', perms='', type=1, icon='fa fa-area-chart', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=99, parentId=96, name='所有权限', url='', perms='act:process', type=2, icon='', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=101, parentId=93, name='待办任务', url='activiti/task/todo', perms='', type=1, icon='', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=104, parentId=77, name='swagger', url='/swagger-ui.html', perms='', type=1, icon='', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=1, parentId=0, name='基础管理', url='', perms='', type=0, icon='fa fa-bars', orderNum=0, gmtCreate=Wed Aug 09 22:49:47 CST 2017, gmtModified=null}, MenuDO{menuId=6, parentId=3, name='用户管理', url='sys/user/', perms='sys:user:user', type=1, icon='fa fa-user', orderNum=0, gmtCreate=Thu Aug 10 14:12:11 CST 2017, gmtModified=null}, MenuDO{menuId=12, parentId=6, name='新增', url='', perms='sys:user:add', type=2, icon='', orderNum=0, gmtCreate=Mon Aug 14 10:51:35 CST 2017, gmtModified=null}, MenuDO{menuId=13, parentId=6, name='编辑', url='', perms='sys:user:edit', type=2, icon='', orderNum=0, gmtCreate=Mon Aug 14 10:52:06 CST 2017, gmtModified=null}, MenuDO{menuId=14, parentId=6, name='删除', url='null', perms='sys:user:remove', type=2, icon='null', orderNum=0, gmtCreate=Mon Aug 14 10:52:24 CST 2017, gmtModified=null}, MenuDO{menuId=15, parentId=7, name='新增', url='', perms='sys:role:add', type=2, icon='', orderNum=0, gmtCreate=Mon Aug 14 10:56:37 CST 2017, gmtModified=null}, MenuDO{menuId=20, parentId=2, name='新增', url='', perms='sys:menu:add', type=2, icon='', orderNum=0, gmtCreate=Mon Aug 14 10:59:32 CST 2017, gmtModified=null}, MenuDO{menuId=21, parentId=2, name='编辑', url='', perms='sys:menu:edit', type=2, icon='', orderNum=0, gmtCreate=Mon Aug 14 10:59:56 CST 2017, gmtModified=null}, MenuDO{menuId=22, parentId=2, name='删除', url='', perms='sys:menu:remove', type=2, icon='', orderNum=0, gmtCreate=Mon Aug 14 11:00:26 CST 2017, gmtModified=null}, MenuDO{menuId=24, parentId=6, name='批量删除', url='', perms='sys:user:batchRemove', type=2, icon='', orderNum=0, gmtCreate=Mon Aug 14 17:27:18 CST 2017, gmtModified=null}, MenuDO{menuId=25, parentId=6, name='停用', url='null', perms='sys:user:disable', type=2, icon='null', orderNum=0, gmtCreate=Mon Aug 14 17:27:43 CST 2017, gmtModified=null}, MenuDO{menuId=26, parentId=6, name='重置密码', url='', perms='sys:user:resetPwd', type=2, icon='', orderNum=0, gmtCreate=Mon Aug 14 17:28:34 CST 2017, gmtModified=null}, MenuDO{menuId=27, parentId=91, name='系统日志', url='common/log', perms='common:log', type=1, icon='fa fa-warning', orderNum=0, gmtCreate=Mon Aug 14 22:11:53 CST 2017, gmtModified=null}, MenuDO{menuId=28, parentId=27, name='刷新', url='null', perms='sys:log:list', type=2, icon='null', orderNum=0, gmtCreate=Mon Aug 14 22:30:22 CST 2017, gmtModified=null}, MenuDO{menuId=29, parentId=27, name='删除', url='null', perms='sys:log:remove', type=2, icon='null', orderNum=0, gmtCreate=Mon Aug 14 22:30:43 CST 2017, gmtModified=null}, MenuDO{menuId=30, parentId=27, name='清空', url='null', perms='sys:log:clear', type=2, icon='null', orderNum=0, gmtCreate=Mon Aug 14 22:31:02 CST 2017, gmtModified=null}, MenuDO{menuId=68, parentId=49, name='发布文章', url='/blog/bContent/add', perms='blog:bContent:add', type=1, icon='fa fa-edit', orderNum=0, gmtCreate=null, gmtModified=null}, MenuDO{menuId=106, parentId=105, name='编辑', url='qrcode/qrcode/edit', perms='qrcode:qrcode:edit', type=2, icon='', orderNum=0, gmtCreate=null, gmtModified=null}, MenuDO{menuId=3, parentId=0, name='系统管理', url='null', perms='null', type=0, icon='fa fa-desktop', orderNum=1, gmtCreate=Wed Aug 09 23:06:55 CST 2017, gmtModified=Mon Aug 14 14:13:43 CST 2017}, MenuDO{menuId=7, parentId=3, name='角色管理', url='sys/role', perms='sys:role:role', type=1, icon='fa fa-paw', orderNum=1, gmtCreate=Thu Aug 10 14:13:19 CST 2017, gmtModified=null}, MenuDO{menuId=50, parentId=49, name='文章列表', url='blog/bContent', perms='blog:bContent:bContent', type=1, icon='fa fa-file-image-o', orderNum=1, gmtCreate=null, gmtModified=null}, MenuDO{menuId=57, parentId=91, name='运行监控', url='/druid/index.html', perms='', type=1, icon='fa fa-caret-square-o-right', orderNum=1, gmtCreate=null, gmtModified=null}, MenuDO{menuId=74, parentId=73, name='增加', url='/system/sysDept/add', perms='system:sysDept:add', type=2, icon='null', orderNum=1, gmtCreate=null, gmtModified=null}, MenuDO{menuId=78, parentId=1, name='数据字典', url='/common/dict', perms='common:dict:dict', type=1, icon='fa fa-book', orderNum=1, gmtCreate=null, gmtModified=null}, MenuDO{menuId=86, parentId=85, name='新增', url='oa/notify/add', perms='oa:notify:add', type=2, icon='fa fa-plus', orderNum=1, gmtCreate=null, gmtModified=null}, MenuDO{menuId=107, parentId=105, name='删除', url='qrcode/QRcode/delete', perms='qrcode:qrcode:delete', type=2, icon='', orderNum=1, gmtCreate=null, gmtModified=null}, MenuDO{menuId=2, parentId=3, name='系统菜单', url='sys/menu/', perms='sys:menu:menu', type=1, icon='fa fa-th-list', orderNum=2, gmtCreate=Wed Aug 09 22:55:15 CST 2017, gmtModified=null}, MenuDO{menuId=71, parentId=1, name='文件管理', url='/common/sysFile', perms='common:sysFile:sysFile', type=1, icon='fa fa-folder-open', orderNum=2, gmtCreate=null, gmtModified=null}, MenuDO{menuId=75, parentId=73, name='刪除', url='system/sysDept/remove', perms='system:sysDept:remove', type=2, icon='null', orderNum=2, gmtCreate=null, gmtModified=null}, MenuDO{menuId=79, parentId=78, name='增加', url='/common/dict/add', perms='common:dict:add', type=2, icon='null', orderNum=2, gmtCreate=null, gmtModified=null}, MenuDO{menuId=80, parentId=78, name='编辑', url='/common/dict/edit', perms='common:dict:edit', type=2, icon='null', orderNum=2, gmtCreate=null, gmtModified=null}, MenuDO{menuId=87, parentId=85, name='编辑', url='oa/notify/edit', perms='oa:notify:edit', type=2, icon='fa fa-pencil-square-o', orderNum=2, gmtCreate=null, gmtModified=null}, MenuDO{menuId=108, parentId=105, name='新增', url='qrcode/QRcode/add', perms='qrcode:qrcode:add', type=2, icon='', orderNum=2, gmtCreate=null, gmtModified=null}, MenuDO{menuId=48, parentId=77, name='代码生成', url='common/generator', perms='common:generator', type=1, icon='fa fa-code', orderNum=3, gmtCreate=null, gmtModified=null}, MenuDO{menuId=73, parentId=3, name='部门管理', url='/system/sysDept', perms='system:sysDept:sysDept', type=1, icon='fa fa-users', orderNum=3, gmtCreate=null, gmtModified=null}, MenuDO{menuId=76, parentId=73, name='编辑', url='/system/sysDept/edit', perms='system:sysDept:edit', type=2, icon='null', orderNum=3, gmtCreate=null, gmtModified=null}, MenuDO{menuId=81, parentId=78, name='删除', url='/common/dict/remove', perms='common:dict:remove', type=2, icon='', orderNum=3, gmtCreate=null, gmtModified=null}, MenuDO{menuId=72, parentId=77, name='计划任务', url='common/job', perms='common:taskScheduleJob', type=1, icon='fa fa-hourglass-1', orderNum=4, gmtCreate=null, gmtModified=null}, MenuDO{menuId=77, parentId=0, name='系统工具', url='', perms='', type=0, icon='fa fa-gear', orderNum=4, gmtCreate=null, gmtModified=null}, MenuDO{menuId=83, parentId=78, name='批量删除', url='/common/dict/batchRemove', perms='common:dict:batchRemove', type=2, icon='', orderNum=4, gmtCreate=null, gmtModified=null}, MenuDO{menuId=105, parentId=3, name='二维码', url='qrcode/qrcode', perms='qrcode:qrcode:qrcode', type=1, icon='', orderNum=4, gmtCreate=null, gmtModified=null}, MenuDO{menuId=84, parentId=0, name='办公管理', url='', perms='', type=0, icon='fa fa-laptop', orderNum=5, gmtCreate=null, gmtModified=null}, MenuDO{menuId=91, parentId=0, name='系统监控', url='', perms='', type=0, icon='fa fa-video-camera', orderNum=5, gmtCreate=null, gmtModified=null}, MenuDO{menuId=49, parentId=0, name='博客管理', url='', perms='', type=0, icon='fa fa-rss', orderNum=6, gmtCreate=null, gmtModified=null}, MenuDO{menuId=93, parentId=0, name='工作流程', url='', perms='', type=0, icon='fa fa-print', orderNum=6, gmtCreate=null, gmtModified=null}, MenuDO{menuId=97, parentId=0, name='图表管理', url='', perms='', type=0, icon='fa fa-bar-chart', orderNum=7, gmtCreate=null, gmtModified=null}]
+2019-07-11 16:41:25 -请求地址 : http://127.0.0.1:8889/sys/user/
+2019-07-11 16:41:25 -HTTP METHOD : GET
+2019-07-11 16:41:25 -CLASS_METHOD : com.bootdo.system.controller.UserController.user
+2019-07-11 16:41:25 -参数 : [{}]
+2019-07-11 16:41:25 -耗时 : 0
+2019-07-11 16:41:25 -返回值 : system/user/user
+2019-07-11 16:41:25 -请求地址 : http://127.0.0.1:8889/system/sysDept/tree
+2019-07-11 16:41:25 -HTTP METHOD : GET
+2019-07-11 16:41:25 -CLASS_METHOD : com.bootdo.system.controller.DeptController.tree
+2019-07-11 16:41:25 -参数 : []
+2019-07-11 16:41:25 -==>  Preparing: select `dept_id`,`parent_id`,`name`,`order_num`,`del_flag` from sys_dept order by dept_id desc 
+2019-07-11 16:41:25 -==> Parameters: 
+2019-07-11 16:41:25 -<==      Total: 10
+2019-07-11 16:41:25 -耗时 : 5
+2019-07-11 16:41:25 -返回值 : {"checked":true,"children":[{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"15","parentId":"13","state":{"opened":true},"text":"测试二部"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"14","parentId":"13","state":{"opened":true},"text":"测试一部"}],"hasChildren":true,"hasParent":false,"id":"13","parentId":"0","state":{"opened":true},"text":"测试部"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"12","parentId":"11","state":{"opened":true},"text":"产品一部"}],"hasChildren":true,"hasParent":false,"id":"11","parentId":"0","state":{"opened":true},"text":"产品部"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"10","parentId":"9","state":{"opened":true},"text":"销售一部"}],"hasChildren":true,"hasParent":false,"id":"9","parentId":"0","state":{"opened":true},"text":"销售部"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"8","parentId":"6","state":{"opened":true},"text":"研发二部"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"7","parentId":"6","state":{"opened":true},"text":"研發一部"}],"hasChildren":true,"hasParent":false,"id":"6","parentId":"0","state":{"opened":true},"text":"研发部"}],"hasChildren":true,"hasParent":false,"id":"-1","parentId":"","state":{"opened":true},"text":"顶级节点"}
+2019-07-11 16:41:25 -请求地址 : http://127.0.0.1:8889/sys/user/list
+2019-07-11 16:41:25 -HTTP METHOD : GET
+2019-07-11 16:41:25 -CLASS_METHOD : com.bootdo.system.controller.UserController.list
+2019-07-11 16:41:25 -参数 : [{limit=10, offset=0, name=, deptId=}]
+2019-07-11 16:41:25 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user order by user_id desc limit ?, ? 
+2019-07-11 16:41:25 -==> Parameters: 0(Integer), 10(Integer)
+2019-07-11 16:41:25 -<==      Total: 10
+2019-07-11 16:41:25 -==>  Preparing: select count(*) from sys_user 
+2019-07-11 16:41:25 -==> Parameters: 
+2019-07-11 16:41:25 -<==      Total: 1
+2019-07-11 16:41:25 -耗时 : 9
+2019-07-11 16:41:25 -返回值 : com.bootdo.common.utils.PageUtils@33cbbad1
+2019-07-11 16:41:29 -请求地址 : http://127.0.0.1:8889/sys/user/remove
+2019-07-11 16:41:29 -HTTP METHOD : POST
+2019-07-11 16:41:29 -CLASS_METHOD : com.bootdo.system.controller.UserController.remove
+2019-07-11 16:41:29 -参数 : [137]
+2019-07-11 16:41:29 -==>  Preparing: delete from sys_user_role where user_id=? 
+2019-07-11 16:41:29 -==> Parameters: 137(Long)
+2019-07-11 16:41:29 -<==    Updates: 1
+2019-07-11 16:41:29 -==>  Preparing: delete from sys_user where user_id = ? 
+2019-07-11 16:41:29 -==> Parameters: 137(Long)
+2019-07-11 16:41:29 -<==    Updates: 1
+2019-07-11 16:41:29 -耗时 : 12
+2019-07-11 16:41:29 -返回值 : {msg=操作成功, code=0}
+2019-07-11 16:41:29 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2019-07-11 16:41:29 -==> Parameters: 1(Long), admin(String), 删除用户(String), 12(Integer), com.bootdo.system.controller.UserController.remove()(String), null, 127.0.0.1(String), 2019-07-11 16:41:29.077(Timestamp)
+2019-07-11 16:41:29 -<==    Updates: 1
+2019-07-11 16:41:29 -请求地址 : http://127.0.0.1:8889/sys/user/list
+2019-07-11 16:41:29 -HTTP METHOD : GET
+2019-07-11 16:41:29 -CLASS_METHOD : com.bootdo.system.controller.UserController.list
+2019-07-11 16:41:29 -参数 : [{limit=10, offset=0, name=, deptId=}]
+2019-07-11 16:41:29 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user order by user_id desc limit ?, ? 
+2019-07-11 16:41:29 -==> Parameters: 0(Integer), 10(Integer)
+2019-07-11 16:41:29 -<==      Total: 10
+2019-07-11 16:41:29 -==>  Preparing: select count(*) from sys_user 
+2019-07-11 16:41:29 -==> Parameters: 
+2019-07-11 16:41:29 -<==      Total: 1
+2019-07-11 16:41:29 -耗时 : 7
+2019-07-11 16:41:29 -返回值 : com.bootdo.common.utils.PageUtils@10bae780
+2019-07-11 16:41:34 -请求地址 : http://127.0.0.1:8889/sys/user/add
+2019-07-11 16:41:34 -HTTP METHOD : GET
+2019-07-11 16:41:34 -CLASS_METHOD : com.bootdo.system.controller.UserController.add
+2019-07-11 16:41:34 -参数 : [{}]
+2019-07-11 16:41:34 -==>  Preparing: select `role_id`,`role_name`,`role_sign`,`remark`,`user_id_create`,`gmt_create`,`gmt_modified` from sys_role order by role_id desc 
+2019-07-11 16:41:34 -==> Parameters: 
+2019-07-11 16:41:34 -<==      Total: 2
+2019-07-11 16:41:34 -耗时 : 2
+2019-07-11 16:41:34 -返回值 : system/user/add
+2019-07-11 16:41:34 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2019-07-11 16:41:34 -==> Parameters: 1(Long), admin(String), 添加用户(String), 3(Integer), com.bootdo.system.controller.UserController.add()(String), null, 127.0.0.1(String), 2019-07-11 16:41:34.703(Timestamp)
+2019-07-11 16:41:34 -<==    Updates: 1
+2019-07-11 16:41:43 -WebSocketSession[1 current WS(1)-HttpStream(0)-HttpPoll(0), 4 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(4)-CONNECTED(4)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 45], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 7], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 2, completed tasks = 1303]
+2019-07-11 16:41:43 -请求地址 : http://127.0.0.1:8889/sys/user/exit
+2019-07-11 16:41:43 -HTTP METHOD : POST
+2019-07-11 16:41:43 -CLASS_METHOD : com.bootdo.system.controller.UserController.exit
+2019-07-11 16:41:43 -参数 : [{username=admin}]
+2019-07-11 16:41:43 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2019-07-11 16:41:43 -==> Parameters: admin(String)
+2019-07-11 16:41:43 -<==      Total: 1
+2019-07-11 16:41:43 -耗时 : 4
+2019-07-11 16:41:43 -返回值 : false
+2019-07-11 16:41:44 -请求地址 : http://127.0.0.1:8889/sys/user/exit
+2019-07-11 16:41:44 -HTTP METHOD : POST
+2019-07-11 16:41:44 -CLASS_METHOD : com.bootdo.system.controller.UserController.exit
+2019-07-11 16:41:44 -参数 : [{username=si}]
+2019-07-11 16:41:44 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2019-07-11 16:41:44 -==> Parameters: si(String)
+2019-07-11 16:41:44 -<==      Total: 0
+2019-07-11 16:41:44 -耗时 : 3
+2019-07-11 16:41:44 -返回值 : true
+2019-07-11 16:41:45 -请求地址 : http://127.0.0.1:8889/sys/user/exit
+2019-07-11 16:41:45 -HTTP METHOD : POST
+2019-07-11 16:41:45 -CLASS_METHOD : com.bootdo.system.controller.UserController.exit
+2019-07-11 16:41:45 -参数 : [{username=ai}]
+2019-07-11 16:41:45 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2019-07-11 16:41:45 -==> Parameters: ai(String)
+2019-07-11 16:41:45 -<==      Total: 0
+2019-07-11 16:41:45 -耗时 : 4
+2019-07-11 16:41:45 -返回值 : true
+2019-07-11 16:41:45 -请求地址 : http://127.0.0.1:8889/sys/user/exit
+2019-07-11 16:41:45 -HTTP METHOD : POST
+2019-07-11 16:41:45 -CLASS_METHOD : com.bootdo.system.controller.UserController.exit
+2019-07-11 16:41:45 -参数 : [{username=ail}]
+2019-07-11 16:41:45 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2019-07-11 16:41:45 -==> Parameters: ail(String)
+2019-07-11 16:41:45 -<==      Total: 0
+2019-07-11 16:41:45 -耗时 : 4
+2019-07-11 16:41:45 -返回值 : true
+2019-07-11 16:41:46 -请求地址 : http://127.0.0.1:8889/sys/user/exit
+2019-07-11 16:41:46 -HTTP METHOD : POST
+2019-07-11 16:41:46 -CLASS_METHOD : com.bootdo.system.controller.UserController.exit
+2019-07-11 16:41:46 -参数 : [{username=aili}]
+2019-07-11 16:41:46 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2019-07-11 16:41:46 -==> Parameters: aili(String)
+2019-07-11 16:41:46 -<==      Total: 0
+2019-07-11 16:41:46 -耗时 : 4
+2019-07-11 16:41:46 -返回值 : true
+2019-07-11 16:41:46 -请求地址 : http://127.0.0.1:8889/sys/user/exit
+2019-07-11 16:41:46 -HTTP METHOD : POST
+2019-07-11 16:41:46 -CLASS_METHOD : com.bootdo.system.controller.UserController.exit
+2019-07-11 16:41:46 -参数 : [{username=ailisi}]
+2019-07-11 16:41:46 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2019-07-11 16:41:46 -==> Parameters: ailisi(String)
+2019-07-11 16:41:46 -<==      Total: 0
+2019-07-11 16:41:46 -耗时 : 5
+2019-07-11 16:41:46 -返回值 : true
+2019-07-11 16:41:46 -请求地址 : http://127.0.0.1:8889/sys/user/exit
+2019-07-11 16:41:46 -HTTP METHOD : POST
+2019-07-11 16:41:46 -CLASS_METHOD : com.bootdo.system.controller.UserController.exit
+2019-07-11 16:41:46 -参数 : [{username=爱丽丝}]
+2019-07-11 16:41:46 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2019-07-11 16:41:46 -==> Parameters: 爱丽丝(String)
+2019-07-11 16:41:46 -<==      Total: 0
+2019-07-11 16:41:46 -耗时 : 4
+2019-07-11 16:41:46 -返回值 : true
+2019-07-11 16:41:52 -请求地址 : http://127.0.0.1:8889/sys/user/save
+2019-07-11 16:41:52 -HTTP METHOD : POST
+2019-07-11 16:41:52 -CLASS_METHOD : com.bootdo.system.controller.UserController.save
+2019-07-11 16:41:52 -参数 : [UserDO{userId=null, username='爱丽丝', name='爱丽丝', password='123456', deptId=null, deptName='', email='425361640@qq.com', mobile='null', status=null, userIdCreate=null, gmtCreate=null, gmtModified=null, roleIds=[], sex=null, birth=null, picId=null, liveAddress='null', hobby='null', province='null', city='null', district='null'}]
+2019-07-11 16:41:52 -==>  Preparing: insert into sys_user ( `username`, `name`, `password`, `dept_id`, `email`, `mobile`, `status`, `user_id_create`, `gmt_create`, `gmt_modified`, `sex`, `birth`, `pic_id`, `live_address`, `hobby`, `province`, `city`, `district` ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2019-07-11 16:41:52 -==> Parameters: 爱丽丝(String), 爱丽丝(String), 281cd42dbfe71a70eb33f181c15a9423(String), null, 425361640@qq.com(String), null, null, null, null, null, null, null, null, null, null, null, null, null
+2019-07-11 16:41:52 -<==    Updates: 1
+2019-07-11 16:41:52 -==>  Preparing: delete from sys_user_role where user_id=? 
+2019-07-11 16:41:52 -==> Parameters: 138(Long)
+2019-07-11 16:41:52 -<==    Updates: 0
+2019-07-11 16:41:52 -耗时 : 14
+2019-07-11 16:41:52 -返回值 : {msg=操作成功, code=0}
+2019-07-11 16:41:52 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2019-07-11 16:41:52 -==> Parameters: 1(Long), admin(String), 保存用户(String), 14(Integer), com.bootdo.system.controller.UserController.save()(String), null, 127.0.0.1(String), 2019-07-11 16:41:52.804(Timestamp)
+2019-07-11 16:41:52 -<==    Updates: 1
+2019-07-11 16:41:52 -请求地址 : http://127.0.0.1:8889/sys/user/list
+2019-07-11 16:41:52 -HTTP METHOD : GET
+2019-07-11 16:41:52 -CLASS_METHOD : com.bootdo.system.controller.UserController.list
+2019-07-11 16:41:52 -参数 : [{limit=10, offset=0, name=, deptId=}]
+2019-07-11 16:41:52 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user order by user_id desc limit ?, ? 
+2019-07-11 16:41:52 -==> Parameters: 0(Integer), 10(Integer)
+2019-07-11 16:41:52 -<==      Total: 10
+2019-07-11 16:41:52 -==>  Preparing: select count(*) from sys_user 
+2019-07-11 16:41:52 -==> Parameters: 
+2019-07-11 16:41:52 -<==      Total: 1
+2019-07-11 16:41:52 -耗时 : 6
+2019-07-11 16:41:52 -返回值 : com.bootdo.common.utils.PageUtils@61a89ba7
+2019-07-11 17:11:43 -WebSocketSession[1 current WS(1)-HttpStream(0)-HttpPoll(0), 4 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(4)-CONNECTED(4)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 45], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 7], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 2, completed tasks = 1735]
+2019-07-11 17:11:50 -Validating all active sessions...
+2019-07-11 17:11:50 -Finished session validation.  [4] sessions were stopped.
+2019-07-11 17:41:43 -WebSocketSession[1 current WS(1)-HttpStream(0)-HttpPoll(0), 4 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(4)-CONNECTED(4)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 45], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 7], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 2, completed tasks = 2168]
+2019-07-11 18:11:13 -Validating all active sessions...
+2019-07-11 18:11:13 -Finished session validation.  [1] sessions were stopped.
+2019-07-11 18:11:43 -WebSocketSession[1 current WS(1)-HttpStream(0)-HttpPoll(0), 4 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(4)-CONNECTED(4)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 45], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 7], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 2, completed tasks = 2601]
+2019-07-11 20:09:02 -WebSocketSession[1 current WS(1)-HttpStream(0)-HttpPoll(0), 4 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(4)-CONNECTED(4)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 45], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 7], sockJsScheduler[pool size = 4, active threads = 2, queued tasks = 0, completed tasks = 2837]
+2019-07-11 20:09:02 -WebSocketSession[1 current WS(1)-HttpStream(0)-HttpPoll(0), 4 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(4)-CONNECTED(4)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 45], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 7], sockJsScheduler[pool size = 4, active threads = 2, queued tasks = 0, completed tasks = 2838]
+2019-07-11 20:09:02 -WebSocketSession[1 current WS(1)-HttpStream(0)-HttpPoll(0), 4 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(4)-CONNECTED(4)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 45], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 7], sockJsScheduler[pool size = 4, active threads = 2, queued tasks = 0, completed tasks = 2839]
+2019-07-11 20:11:43 -WebSocketSession[1 current WS(1)-HttpStream(0)-HttpPoll(0), 4 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(4)-CONNECTED(4)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 45], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 7], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 2, completed tasks = 4091]
