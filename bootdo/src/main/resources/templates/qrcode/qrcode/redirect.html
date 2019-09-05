@@ -12,10 +12,10 @@
 
 </head>
 <body>
-<canvas id="myCanvas" class="myCanvas" > </canvas>
-<div id="qrcode" style="width:100px; height:100px; margin-top:15px;"></div>
+<div id="qrcode" class="qrcode" style="width:100px; height:100px; margin-top:15px;"></div>
 
-<div id="wechat_background" class="footer">     </div>
+<div id="wechat_background" class="wechat_background">     </div>
+<div id="qq_background" class="qq_background">     </div>
 <style>
     *{
         margin: 0;
@@ -25,9 +25,9 @@
         width: 100%;
         height: 100%;
     }
-    .footer{
-        background: #1AAD19;
-        hight:auto;
+
+    .wechat_background{
+        height:auto;
         width:100%;
         min-height: 100%;
         max-width: 100%;
@@ -37,10 +37,21 @@
         top: 0;
     }
 
-    .myCanvas{
-        height: 200px;
-        width: 200px;
-        z-index: 0;
+    .qq_background{
+        height:auto;
+        width:100%;
+        min-height: 100%;
+        max-width: 100%;
+        z-index:-1;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .qrcode{
+        position: absolute;
+        left:25%;
+        top: 35%;
     }
 </style>
 <script type="text/javascript" th:inline="javascript">
@@ -52,16 +63,9 @@
             window.location.href = query;
             break;
         case ("Micro"):
-          //makeCode(query);
-
-            var c=document.getElementById("myCanvas");
-            var ctx=c.getContext("2d");
-            var img=makeCode(query);
-            img.onload = function() {
-                ctx.drawImage(img,10,10);
-            }
-
+          makeCode(query);
             var wechat_background = document.getElementById("wechat_background");
+            wechat_background.style.background="#1AAD19";
             var wxBo = document.createElement("img");
             wxBo.src = "http://pay.hotapp.cn/static/scan/images/wxBo.png";
             wxBo.style.height = "100%";
@@ -79,11 +83,21 @@
             wechat_background.appendChild(wxBG);
 
             break;
+
         case ("qq"):
             makeCode(query);
+            var qq_background = document.getElementById("qq_background");
+            qq_background.style.background="#52D6FF";
+            var qqBo = document.createElement("img");
+            qqBo.src= "http://pay.hotapp.cn/images/qqpay_head.jpg";
+            qqBo.style.height = "100%";
+            qqBo.style.width = "100%";
+            qqBo.style.maxHeight="100%";
+            qqBo.style.maxWidth="100%";
+            qq_background.appendChild(qqBo);
             break;
         case ("md5"):
-            makeCode("http://192.168.1.3:81/qrcode/qrcode/getResult?" + md5);
+            makeCode("http://192.168.1.102:81/qrcode/qrcode/getResult?" + md5);
             break;
         default:
             alert("error");

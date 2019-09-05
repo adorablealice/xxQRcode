@@ -9,34 +9,19 @@
     <script type="text/javascript" src="http://static.runoob.com/assets/qrcode/qrcode.min.js"></script>
 </head>
 <body>
-<!--<form action="http://192.168.1.9:8889/qrcode/qrcode/save" method="post" enctype="multipart/form-data">-->
-<!--<table align="center" width="500">-->
-<!--<tr>-->
-<!--<td>qrcode1</td>-->
-<!--<td><a id="upload1"> <input id='ailipayurl' name="uploads" type="file" multiple="multiple" value="alipayurl"></a></td>-->
-<!--</tr>-->
-<!--<tr>-->
-<!--<td>qrcode2</td>-->
-<!--<td><a id="upload2"> <input id='wechaturl'  name="uploads1" type="file" multiple="multiple"  value="wechaturl"></a></td>-->
-<!--</tr>-->
-<!--<tr>-->
-<!--<td colspan="2" align="center">-->
-<!--<input type="submit" name="submit" value="提交"/>-->
-<!--</td>-->
-<!--</tr>-->
-<!--</table>-->
-<!--</form>47.103.59.162-->
-<form action="http://192.168.1.3:81/qrcode/qrcode/save" id="form" method="post" style="text-align:center;" enctype="multipart/form-data">
-    <input type="file" id="alipayurl" name="uploads_alipay" accept=".jpg,.jpeg,.png"><br/>
-    <input type="file" id="wechaturl" name="uploads_wechat" accept=".jpg,.jpeg,.png"><br/>
-    <input type="file" id="qqurl" name="uploads_qq" accept=".jpg,.jpeg,.png"><br/>
+
+<form action="http://192.168.1.102:81/qrcode/qrcode/save" id="form" method="post" style="text-align:center;" enctype="multipart/form-data">
+    <input type="file" id="alipayurl" name="uploads_alipay"  accept="image/*" ><br/>
+    <input type="file" id="wechaturl" name="uploads_wechat" accept="image/*" ><br/>
+    <input type="file" id="qqurl" name="uploads_qq" accept="image/*" ><br/>
+
     <input type="submit" id="tj" value="提交">
 </form>
 
 <script type="text/javascript">
     $(function(){
         $("#form").ajaxForm(function(){
-                alert("提交成功！");
+            alert("提交成功！");
         });
     });
 </script>
